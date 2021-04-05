@@ -1,5 +1,7 @@
 # Exercise 3 - Power BI integration
 
+## Overview
+
 In this exercise, you will realize another benefit of the fully integrated environment provided by Azure Synapse Analytics. Here, you will create a Power BI Report and build a visualization within Synapse Analytics Studio. Once you have published a dataset, you will not have to leave this environment to log into a separate Power BI website to view and edit reports.
 
 The Power BI Workspace has already been created for you.
@@ -26,7 +28,7 @@ In this task, you will use Power BI Desktop to create the dataset used by the re
 
 > Note: Power BI desktop will already be installed in the virtual machine provided with the lab.
 
-1. Open Synapse Analytics Studio, and then navigate to the `Develop hub`.
+1. Open **Synapse Analytics Studio**, and then navigate to the `Develop hub`.
 
    ![Develop hub.](media/develop-hub.png "Develop hub")
 
@@ -56,11 +58,11 @@ In this task, you will use Power BI Desktop to create the dataset used by the re
 
    >PowerBI desktop will already be installed on the **labvm** provided.
 
-8. When Power BI Desktop loads, select **Microsoft account**, then select **Sign in**. Follow the login prompts to login with the credential provided to you. When you return to the SQL Server database dialog, select **Connect**.
+8. When Power BI Desktop loads, select **Microsoft account** **(1)**, then select **Sign in** **(2)**. Follow the login prompts to login with the credential provided to you in **environment detals** tab. When you return to the SQL Server database dialog, select **Connect** **(3)**.
 
    ![Signing in with a Microsoft account](media/ex03-login-pbi.png "Sign in")
 
-9. In the Navigator dialog, within the list of tables select **wwi.FactSale**, confirm the preview shows some data, and then select **Load**.
+9. In the Navigator dialog, within the list of tables select **wwi.FactSale** **(1)**, confirm the preview shows some data, and then select **Load** **(2)**.
 
    ![Selecting the wwi.FactSale table and viewing the preview](media/ex03-load-table-pbi.png "Select table")
 
@@ -68,7 +70,7 @@ In this task, you will use Power BI Desktop to create the dataset used by the re
 
     ![Selecting the wwi.FactSale table and viewing the preview](media/ex03-pbi-directquery.png "Set query type")
 
-11. From the **File** menu, select **Publish** and then select **Publish to Power BI**. If prompted to save your changes, select Save and provide `wwifactsales` as the name. This will also be the name used for the dataset. You may be prompted to login a second time. Follow the login prompts to login with the credentials provided to you.
+11. From the **File** menu, select **Publish** and then select **Publish to Power BI**. If prompted to save your changes, select Save and provide `wwifactsales` as the name. This will also be the name used for the dataset. You may be prompted to login a second time. Follow the login prompts to login with the credentials provided to you in **environment detals** tab.
 
     ![Selecting Publish to Power BI from the File menu](media/ex03-publish-menu.png "Publish to Power BI")
 
@@ -106,17 +108,17 @@ In this task, you will learn how to use a collaborative approach to create a new
 
 If you do not see a list of data fields under Fields, follow the steps below for a fix.
 
-1. Navigate to [www.powerbi.com](https://www.powerbi.com) on a new browser tab. Select **Sign In** and use the credential provided to you.
+1. Navigate to [www.powerbi.com](https://www.powerbi.com) on a new browser tab. Select **Sign In** and use the credential provided to you in **environment detals** tab.
 
-2. Select `Workspaces` from the left menu and select `PowerBIWorkspace` as shown in the screenshot.
+2. Select `Workspaces` **(1)** from the left menu and select `PowerBIWorkspace` **(2)** as shown in the screenshot.
 
    ![Selecting the right workspace to work on](media/ex03-selecting-workspace.png "Selecting the right workspace to work on")
 
-3. Navigate to the **Settings** by selecting the ellipse symbol at the top right, then select **Settings** from the menu.
+3. Navigate to the **Settings** **(3)** by selecting the **ellipse** **(1)** symbol at the top right, then select **Settings** **(2)** from the menu.
 
    ![The Settings menu is displayed.](media/pbiws1-settings.png "Settings")
 
-4. Select the **Datasets** tab. From the list of datasets select `wwifactsales`, then select **Edit credentials** underneath the **Data Source credentials** section.
+4. Select the **Datasets** **(1)** tab. From the list of datasets select `wwifactsales`, then select **Edit credentials** **(2)** underneath the **Data Source credentials** section.
 
    ![Changing settings for the wwifactsales dataset](media/ex03-setting-dataset-credentials.png "Changing settings for the wwifactsales dataset")
 
@@ -164,10 +166,14 @@ If you do not see a list of data fields under Fields, follow the steps below for
 
    ![Monitor hub.](media/monitor-hub.png "Monitor hub")
 
-2. Select **SQL requests** in the left-hand menu **(1)**, then select **SQLPool01** under the Pool filter **(2)**. Look at the list of recent queries executed by your lab username as the Submitter. Hover over one of these queries to see the **Request content**, click on **More** next to the Request content **(3)** to view the executed query.
+2. Select **SQL requests** **(1)** in the left-hand menu, then select **SQLPool01** **(2)** under the Pool filter. Look at the list of recent queries executed by your lab username as the Submitter. Hover over one of these queries to see the **Request content**, click on **More** **(3)** next to the Request content to view the executed query.
 
    ![The list of SQL requests is displayed.](media/ex03-sqlrequestsid.png "SQL requests")
 
 3. View the queries' request content until you find one that contains the SQL SELECT statement executed by your filter in the Power BI report. Here you can see the `Profit` and `TotalExcludingTax` fields have the SUM aggregate, and the `wwi.FactSale` table is grouped by `SalespersonKey`. A WHERE clause filters the rows by `Profit` (aliased as `a0`) where the value is greater than or equal to `50000000` ($50 million). Power BI generated the SQL script, then used the dedicated SQL pool to execute the query and send back the results.
 
    ![The SQL query is displayed as described above.](media/ex03-pbi-sql-statement.png "Request content")
+
+## Summary
+
+- In this exercise, you have completed **Power BI integration** in **Synapse Analytics Studio** by creating **Power BI dataset in Synapse** and **Power BI report in Synapse**
