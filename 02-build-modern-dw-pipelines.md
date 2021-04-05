@@ -1,5 +1,7 @@
 # Exercise 2 - Build a Modern Data Warehouse with Azure Synapse Pipelines
 
+## Overview
+
 In this exercise, you examine various methods for ingesting data into Azure Synapse Analytics and Azure Data Lake Storage Gen2. You use notebooks and Data Flows to ingest, transform, and load data.
 
 The tasks you will perform in this exercise are:
@@ -33,15 +35,15 @@ In this task, you see how easy it is to write into a SQL Pool table with Spark t
 
    ![The new notebook menu item is highlighted.](media/new-notebook.png "New notebook")
 
-3. If not already attached, attach your Spark Compute **SparkPool01** by selecting it from the **Attach to** drop-down list and attach **Spark (Scala)** by selecting it from **Language** drop down list, then select **{} Add code** to create a new cell.
+3. If not already attached, attach your Spark Compute **SparkPool01** by selecting it from the **Attach to** **(1)** drop-down list and attach **Spark (Scala)** by selecting it from **Language** **(2)** drop-down list, then select **{} Add code** **(3)** to create a new cell.
 
    ![The Spark pool is selected in the Attach to drop-down.](media/new-notebook-add-code1.png "Add code")
 
-   **Note:** If you are using your notebook from the end of Exercise 1, hover over the area just below the cell in the notebook, then select **{} Add code** to add a new cell.
+   **Note:** If you are using your notebook from the end of **Exercise 1**, hover over the area just below the cell in the notebook, then select **{} Add code** to add a new cell.
 
    ![The add code button is highlighted.](media/add-cell.png "Add code")
 
-4. Paste the following into the new cell and **replace** `YOUR_DATALAKE_NAME` with the name of your **Storage Account Name** provided in the environment details tab on the right. You can also copy it from the first cell of the notebook if you are using the same one from Exercise 1.
+4. Paste the following into the new cell and **replace** `YOUR_DATALAKE_NAME` with the name of your **Storage Account Name** provided in the environment details tab on the right. You can also copy it from the first cell of the notebook if you are using the same one from **Exercise 1**.
 
    ```
    %%spark
@@ -105,7 +107,7 @@ In this task, you see how easy it is to write into a SQL Pool table with Spark t
 
     This code writes the data retrieved from Blob Storage into a staging table in Azure Synapse Analytics using the SQL Analytics connector. Using the connector simplifies connecting to Azure Synapse Analytics because it uses AAD pass-through. There is no need to create a password, identity, external table, or format sources, as it is all managed by the connector.
 
-10. As the cell runs, select the arrow icon below the cell to expand the details for the Spark job. After approximately 1-2 minutes, the execution of Cell 3 will complete. Once it completes move on the next step.
+10. As the cell runs, select the arrow icon below the cell to expand the details for the Spark job. After approximately 1-2 minutes, the execution of Cell 3 will complete. Once it completes move to the next step.
 
     > This pane allows you to monitor the underlying Spark jobs, and observe the status of each. As you can see, the cell is split into two Spark jobs, and the progress of each can be observed. We will take a more in-depth look at monitoring Spark applications in Task 4 below.
 
@@ -121,7 +123,7 @@ In this task, you see how easy it is to write into a SQL Pool table with Spark t
 
     ![Data is selected and highlighted in the Synapse Analytics menu.](media/data-hub.png "Data hub")
 
-13. Under **Workspace** tab expand **Databases** and then expand the **SQLPool01** database.
+13. Under the **Workspace** **(1)** tab expand **Databases** **(2)** and then expand the **SQLPool01** **(3)** database.
 
     ![The Databases folder is expanded, showing a list of databases within the Azure Synapse Analytics workspace. SQLPool01 is expanded and highlighted.](media/ex02-databasesqlpool.png "Synapse Analytics Databases")
 
@@ -169,7 +171,7 @@ To observe the data being written into the table:
 
 2. Right-click the table named `wwi_staging.Sale_CSharp`, and choose **New SQL Script** then **SELECT TOP 100 rows**.
 
-   > If you do not see the table, select the Actions ellipsis next to Tables, and then select **Refresh** from the fly-out menu.
+   > If you do not see the table, select the Actions ellipsis next to Tables and then select **Refresh** from the fly-out menu.
 
 3. Replace the existing query in the editor with the query below. 
 
@@ -203,7 +205,7 @@ In this task, you use a Pipeline containing a Data Flow to explore, transform, a
 
 3. Now, take a closer look at each of the activities within the pipeline. On the canvas graph, select the **Copy data** activity named `Import Customer dimension`.
 
-    > Below the graph is a series of tabs, each of which provides additional details about selected the activity. The **General** tab displays the name and description assigned to the activity, along with a few other properties.
+    > Below the graph is a series of tabs, each of which provides additional details about selected activity. The **General** tab displays the name and description assigned to the activity, along with a few other properties.
 
     ![A screenshot of Exercise 2 - Enrich Data pipeline canvas and properties pane is displayed.](media/ex02-orchestrate-copy-data-general.png "Pipeline canvas")
 
@@ -213,7 +215,7 @@ In this task, you use a Pipeline containing a Data Flow to explore, transform, a
 
     ![The Source tab for the Copy data activity is selected and highlighted.](media/ex02-orchestrate-copy-data-source.png "Pipeline canvas property tabs")
 
-5. Next, select the **Sink** tab. The sink specifies where the copied data will be written. Like the Source, the sink uses a dataset to define a pointer to the target data store. Select **PolyBase** for the `Copy method`. This improves the data loading speed as compared to the default setting of bulk insert.
+5. Next, select the **Sink** tab. The sink specifies where the copied data will be written. Like the Source, the sink uses a dataset to define a pointer to the target data store. Select **PolyBase** for the `Copy method`. This improves the data loading speed as compared to the default setting of the bulk insert.
 
     ![The Sink tab for the Copy data activity is selected and highlighted.](media/ex02-orchestrate-copy-data-sink.png "Pipeline canvas property tabs")
 
@@ -249,9 +251,9 @@ In this task, you use a Pipeline containing a Data Flow to explore, transform, a
 
 10. Take a minute to look at the options available on the various tabs in the configuration panel. You will notice the properties here define how the data flow operates within the pipeline.
 
-11. Now, let us take a look at the definition of the data flow the Data Flow activity references. Double-click the `Enrich Customer Data` Data Flow activity on the pipeline canvas to open the underlying Data Flow in a new tab.
+11. Now, let us take a look at the definition of the data flow activity references. Double-click the `Enrich Customer Data` Data Flow activity on the pipeline canvas to open the underlying Data Flow in a new tab.
 
-    > **Important**: Typically, when working with Data Flows, you would want to enable **Data flow debug**. [Debug mode](https://docs.microsoft.com/azure/data-factory/concepts-data-flow-debug-mode) creates a Spark cluster to use for interactively testing each step of the data flow and allows you to validate the output prior to saving and running the data flow. Enabling a debugging session can take up to 10 minutes, so you will not enable this for the purposes of this workshop. Screenshots will be used to provide details that would otherwise require a debug session to view.
+    > **Important**: Typically, when working with Data Flows, you would want to enable **Data flow debug**. [Debug mode](https://docs.microsoft.com/azure/data-factory/concepts-data-flow-debug-mode) creates a Spark cluster to use for interactively testing each step of the data flow and allows you to validate the output before saving and running the data flow. Enabling a debugging session can take up to 10 minutes, so you will not enable this for the purposes of this workshop. Screenshots will be used to provide details that would otherwise require a debug session to view.
 
     ![The EnrichCustomerData Data Flow canvas is displayed.](media/ex02-orchestrate-data-flow.png "Data Flow canvas")
 
@@ -463,7 +465,7 @@ In this task, you examine the Apache Spark application monitoring capabilities b
 
 4. From the list of Spark applications, select the first job, which should have a status of `In progress` or `Succeeded`.
 
-   > **Note**: You may see a status of `Cancelled` or `Stopped` , and this does not prevent you from completing the following steps. Azure Synapse Analytics is still in preview, and the status gets set to `Cancelled` or `Stopped` when the Spark pool used to run the Spark application times out.
+   > **Note**: You may see a status of `Cancelled` or `Stopped`, and this does not prevent you from completing the following steps. Azure Synapse Analytics is still in preview, and the status gets set to `Cancelled` or `Stopped` when the Spark pool used to run the Spark application times out.
 
    ![The current Spark application is highlighted in the applications list.](media/ex02-monitor-activities-spark-application-list.png "Synapse Analytics Monitor")
 
@@ -511,10 +513,14 @@ In this task, you examine the Apache Spark application monitoring capabilities b
 
     ![A screenshot of an in-progress playback is displayed. The playback is at 1m 49s into the Spark application run, and Stage 6 is showing a Stage progress of 6.25%.](media/ex02-monitor-activities-spark-applications-playback-progress.png "Synapse Analytics Monitor")
 
-15. You can also perform a playback on an individual stage. Returning to a view of only Stage 3, the **Playback** button shows the rows written at this stage, and the progress of reads and writes.
+15. You can also perform playback on an individual stage. Returning to a view of only Stage 3, the **Playback** button shows the rows written at this stage, and the progress of reads and writes.
 
     ![A screenshot of an in-progress playback for Stage 3 is displayed.](media/ex02-monitor-activities-spark-applications-playback-stage-3.png "Synapse Analytics Monitor")
 
 16. You can also change the view to see which stages were involved in read and write activities. Select **All job IDs** in the job dropdown, and in the **View** drop-down, select **Read**. You can see which stages performed reads, with each color-coded by how much data was read.
 
     ![Read is selected and highlighted in the Display drop-down list.](media/ex02-monitor-activities-spark-applications-display-drop-down-read-graph.png "Synapse Analytics Monitor")
+
+## Summary
+
+- In this exercise, you have completed building a Modern Data Warehouse with Azure Synapse Pipelines. Now you can move on to the next module by clicking on the Next button at the bottom right of this page.
