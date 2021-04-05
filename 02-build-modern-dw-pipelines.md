@@ -184,8 +184,6 @@ To observe the data being written into the table:
    ![CSharp for Spark](./media/ex02-csharp-for-spark-extra.png)
    
    > Re-run the query every 5-10 seconds to watch the count of records in the table, and how it changes as new records are being added by the notebook. The script in the notebook limits the number of rows to 1500, so if you see a count of 1500, the notebook has completed processing.
-   
-   **Important**: Close the SQLscript by selecting the **X** in the top right of the tab and then select **Discard Changes**.
 
 5. **Important**: Close the notebook by selecting the **X** in the top right of the tab and then select **Discard Changes**. Closing the notebook will ensure you free up the allocated resources on the Spark Pool.
 
@@ -305,13 +303,13 @@ In this task, you use a Pipeline containing a Data Flow to explore, transform, a
 
 21. Select **Cancel** to close the visual expression builder.
 
-22. Select the `DimCustomer` data source on the data flow canvas graph.
+22. Select the `DimCustomer` **(1)** data source on the data flow canvas graph.
 
     > Take a few minutes to review the various tabs in the configuration panel for this data source to get a better understanding of how it is configured, as you did above. Note that this data source relies on the `wwi_staging.DimCustomer_UniqueId` table from Azure Synapse Analytics for its data. `UniqueId` is supplied by a parameter to the data flow, which contains a substring of the Pipeline Run Id. Before running the pipeline, you will add a dependency to the Data Flow activity to ensure the Copy activity has populated the `wwi_staging.DimCustomer_UniqueId` in Azure Synapse Analytics before allowing the data flow to execute.
 
     ![The DimCustomer data source is highlighted on the data flow canvas graph.](media/ex02-orchestrate-data-flow-sources-dim-customer.png "Data flow canvas")
 
-23. Next, select the `JoinOnPostalCode` transformation and ensure the **Join settings** tab is selected to see how you can join datasets using a simple and intuitive graphical interface.
+23. Next, select the `JoinOnPostalCode` **(1)** transformation and ensure the **Join settings** **(2)** tab is selected to see how you can join datasets using a simple and intuitive graphical interface.
 
     > The **Join settings** tab allows you to specify the data sources being joined and the join types and conditions. Notice the **Right stream** points to the `PostalCodeFilter` and not the `PostalCodes` data source directly. By referencing the filtered dataset, the join works with a smaller set of postal codes. For extensive datasets, this can provide performance benefits.
 
@@ -323,7 +321,7 @@ In this task, you use a Pipeline containing a Data Flow to explore, transform, a
 
     ![The SelectDesiredColumns transformation is highlighted in the data flow graph.](media/ex02-orchestrate-data-flow-transformations-select.png "Data flow canvas")
 
-25. The last two items in the data flow are the defined sinks. These provide the connection settings necessary to write the transformed data into the desired data sink. Select the `EnrichCustomerData` sink and inspect the settings on the **Sink** tab.
+25. The last two items in the data flow are the defined sinks. These provide the connection settings necessary to write the transformed data into the desired data sink. Select the `EnrichCustomerData` **(1)** sink and inspect the settings on the **Sink** **(2)** tab.
 
     ![The Sink tab is displayed for the EnrichCustomerData sink, which is highlighted in the graph.](media/ex02-orchestrate-data-flow-sink-sink.png "Data flow canvas")
 
@@ -359,7 +357,7 @@ In this task, you use a Pipeline containing a Data Flow to explore, transform, a
 
     ![The publishing completed notification is displayed.](media/ex02-publishing-completed.png "Publishing completed")
 
-34. Your pipeline is now ready to run. Select **Add trigger** then **Trigger now** on the toolbar for the pipeline.
+34. Your pipeline is now ready to run. Select **Add trigger** **(1)** then **Trigger now** **(2)** on the toolbar for the pipeline.
 
     ![Add trigger is highlighted on the pipeline toolbar, and Trigger now is highlighted in the fly-out menu.](media/ex02-orchestrate-pipelines-trigger-now.png "Trigger pipeline")
 
@@ -523,4 +521,4 @@ In this task, you examine the Apache Spark application monitoring capabilities b
 
 ## Summary
 
-- In this exercise, you have completed building a Modern Data Warehouse with Azure Synapse Pipelines. Now you can move on to the next module by clicking on the Next button at the bottom right of this page.
+- In this exercise, you have completed building a Modern Data Warehouse with Azure Synapse Pipelines. Now you can move on to the next exercise by clicking on the Next button at the bottom right of this page.
