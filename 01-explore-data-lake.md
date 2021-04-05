@@ -14,11 +14,19 @@ The tasks you will perform in this exercise are:
   - Task 1 - Explore the Data Lake with Synapse SQL On-demand
   - Task 2 - Explore the Data Lake with Synapse Spark
 
+### Instructions 
+
+1. After the environment is provisioned successfully your browser will load up the **Lab Guide** along with a virtual machine called **JumpVM**. This virtual machine will be your platform throughout the course of the workshop. In case you do not see the JumpVM load up on the left side of the screen, navigate to the **Virtual Machines** tab on the top right of the **Lab Guide** and check the status of the virtual machine. Alternately, you can directly RDP into JumpVM using the credentials provided in the **Environment Details** tab.
+
+2. All user credentials for accessing the **Azure Portal** can be viewed under the **Environment Details** tab for ease of access. Do note that the same information will also be sent to your registered email address. 
+
+3. The Lab Guide can also be opened on a separate window by selecting the **Split Window** icon in the bottom right corner. This will result in the window detaching from the right side providing more on-screen space for your virtual machine.
+
 ## Task 1 - Explore the data lake with Azure Synapse SQL On-demand
 
 In this task, you will browse your data lake using SQL On-demand.
 
-1. In a Microsoft Edge web browser, navigate to the Azure portal (`https://portal.azure.com`) and login with your credentials from the Lab Environment Details tab. Then select **Resource groups**.
+1. Launch Azure Portal using the desktop icon on the JumpVM and login with the Azure credentials from the Lab Environment Details tab. Then select **Resource groups**.
 
    ![Open Azure resource group](./media/00-open-resource-groups.png "Azure resource groups")
 
