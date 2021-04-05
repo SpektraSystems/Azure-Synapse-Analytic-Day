@@ -16,7 +16,7 @@ The tasks you will perform in this exercise are:
 
 In this task, you will browse your data lake using SQL On-demand.
 
-1. In a Microsoft Edge web browser, navigate to the Azure portal (`https://portal.azure.com`) and login with your credentials. Then select **Resource groups**.
+1. In a Microsoft Edge web browser, navigate to the Azure portal (`https://portal.azure.com`) and login with your credentials from the Lab Environment Details tab. Then select **Resource groups**.
 
    ![Open Azure resource group](./media/00-open-resource-groups.png "Azure resource groups")
 
@@ -54,7 +54,7 @@ In this task, you will browse your data lake using SQL On-demand.
 
 9. Once you are in `InvoiceDateKey=2012-01-01` right-click the Parquet file and select `New SQL script - Select TOP 100 rows`.
 
-   > A script is automatically generated. Run this script to see how SQL on demand queries the file and returns the first 100 rows of that file with the header, allowing you to easily explore data in the file
+   > A script is automatically generated. Run this script to see how SQL on-demand queries the file and returns the first 100 rows of that file with the header, allowing you to easily explore data in the file
 
    ![Start new SQL script from data lake file](./media/ex01-sql-on-demand-01.png "Create a new SQL script")
 
@@ -62,7 +62,7 @@ In this task, you will browse your data lake using SQL On-demand.
 
     ![Run SQL script on data lake file](./media/ex01-sql-on-demand-02.png "Execute SQL script")
 
-    > Note: SQL on demand is now named as **Built-in**
+    > Note: SQL on-demand is now named as **Built-in**
 
 11. Let us change the initial script to load multiple Parquet files at once.
 
@@ -83,7 +83,7 @@ In this task, you will browse your data lake using SQL On-demand.
 
     ![Develop hub.](media/develop-hub.png "Develop hub")
 
-14. Select the `Exercise 1 - Read with SQL on-demand` SQL script. Connect to **Built-in** and select **SQLOnDemand01** as the database. Select **Run** to execute the script..
+14. Select the `Exercise 1 - Read with SQL on-demand` SQL script. Connect to **Built-in** and select **SQLOnDemand01** as the database. Select **Run** to execute the script.
 
     ![Run SQL on-demand script loading multiple CSV data lake files](./media/ex01-sql-on-demand-04.png)
 
@@ -119,11 +119,11 @@ In this task, you will browse your data lake using SQL On-demand.
    display(df.limit(100))
    ```
 
-7. Rerun the notebook again to see the result.
+7. Rerun the notebook to see the result.
 
    ![Improve dataset formatting in Spark notebook](./media/ex01-spark-notebookrun-04.png "Execute notebook")
 
-8. Notice the included charting capabilities that enable visual exploration of your data. Switch to **Chart** view. Select **View Options** and change the **Key** to `CustomerKey` and **Values** to `CityKey` and then click on Apply button.
+8. Notice the included charting capabilities that enable visual exploration of your data. Switch to **Chart** **(1)** view. Select **View Options** **(2)** and change the **Key** **(3)** to `CustomerKey` and **Values** **(4)** to `CityKey` and then click on Apply **(5)** button.
 
     ![View charts on data in Spark notebook](./media/ex01-spark-notebook-05.png "Review charted data")
     
@@ -131,11 +131,11 @@ In this task, you will browse your data lake using SQL On-demand.
 
     ![Collapse Output](./media/collapseoutput.png "Collapse Output")
 
-10. Hover over the area just below the cell in the notebook, then select **{} Add code** to add a new cell. **{} Add code** won't be visible untill you Hover the area in front of arrow.
+10. Hover over the area just below the cell in the notebook, then select **{} Add code** to add a new cell. **{} Add code** won't be visible until you Hover the area in front of the arrow.
 
    ![The add code button is highlighted.](media/addcode.png "Add code")
 
-11. Paste the following into the cell and **replace** `YOUR_DATALAKE_NAME` with the name of your **Storage Account Name** provided in the environment details tab on the right. You can also copy it from the first cell of the notebook above.
+11. Paste the following into the cell and **replace** `YOUR_DATALAKE_NAME` with the name of your **Storage Account Name** provided in the **environment details** tab on the right. You can also copy it from the first cell of the notebook above.
 
     ```python
     data_path = spark.read.load(
@@ -147,13 +147,13 @@ In this task, you will browse your data lake using SQL On-demand.
     display(data_path.limit(100))
     ```
 
-12. Select the **Run cell** button to execute the new cell and then select the **Table** view in output section.
+12. Select the **Run cell** button to execute the new cell and then select the **Table** view in the output section.
 
     ![The new cell is displayed and the run cell button is highlighted.](media/notebook-new-csv-cell1.png "New cell to explore CSV files")
 
     > This notebook demonstrates the same functionality, except this time, it loads CSV files instead of Parquet ones (notice the `factsale-csv` folder in the path).
 
-13. **Important**: Close the notebook by selecting the X in the top right of the tab and then select Close + discard changes. Closing the notebook will ensure you free up the allocated resources on the Spark Pool. Also close the SQLscripts along with any open notebooks.
+13. **Important**: Close the notebook by selecting the X in the top right of the tab and then select Close + discard changes. Closing the notebook will ensure you free up the allocated resources on the Spark Pool. Also, close the SQLscripts along with any open notebooks.
 
      ![The new cell is displayed and the run cell button is highlighted.](media/close-notebook.png "Close Notebook")
      
