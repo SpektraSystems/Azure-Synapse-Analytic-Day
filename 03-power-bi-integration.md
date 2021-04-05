@@ -44,7 +44,7 @@ In this task, you will use Power BI Desktop to create the dataset used by the re
 
    ![Select Start in the first screen of wizard](media/ex03-pbids-install-pbidesktop.png "Select Start")
 
-5. In the step by step dialog that appears, select `SQLPool01` and then select **Continue**.
+5. In the step-by-step dialog that appears, select `SQLPool01` and then select **Continue**.
 
    ![The SQLPool01 data source is selected.](media/ex03-pbid-select-data-source.png "Select a data source")
 
@@ -52,9 +52,9 @@ In this task, you will use Power BI Desktop to create the dataset used by the re
 
    ![Selecting Download](media/ex03-download-pbid.png "Download file")
 
-7. Open the downloaded .pbids file. This will launch Power BI desktop.
+7. Open the downloaded .pbids file. This will launch the Power BI desktop.
 
-   >PowerBI desktop will already be installed on the labvm provided.
+   >PowerBI desktop will already be installed on the **labvm** provided.
 
 8. When Power BI Desktop loads, select **Microsoft account**, then select **Sign in**. Follow the login prompts to login with the credential provided to you. When you return to the SQL Server database dialog, select **Connect**.
 
@@ -108,7 +108,7 @@ If you do not see a list of data fields under Fields, follow the steps below for
 
 1. Navigate to [www.powerbi.com](https://www.powerbi.com) on a new browser tab. Select **Sign In** and use the credential provided to you.
 
-2. Select `Workspaces` from the left menu and select the `PowerBIWorkspace` as shown in the screenshot.
+2. Select `Workspaces` from the left menu and select `PowerBIWorkspace` as shown in the screenshot.
 
    ![Selecting the right workspace to work on](media/ex03-selecting-workspace.png "Selecting the right workspace to work on")
 
@@ -164,7 +164,7 @@ If you do not see a list of data fields under Fields, follow the steps below for
 
    ![Monitor hub.](media/monitor-hub.png "Monitor hub")
 
-2. Select **SQL requests** in the left-hand menu **(1)**, then select **SQLPool01** under the Pool filter **(2)**. Look at the list of recent queries executed by your lab username as the Submitter. Hover over one of these queries to see the **Request content** ,click on **More** next to the Request content **(3)** to view the executed query.
+2. Select **SQL requests** in the left-hand menu **(1)**, then select **SQLPool01** under the Pool filter **(2)**. Look at the list of recent queries executed by your lab username as the Submitter. Hover over one of these queries to see the **Request content**, click on **More** next to the Request content **(3)** to view the executed query.
 
    ![The list of SQL requests is displayed.](media/ex03-sqlrequestsid.png "SQL requests")
 
