@@ -176,4 +176,4 @@ If you do not see a list of data fields under Fields, follow the steps below for
 
 ## Summary
 
-- In this exercise, you have completed **Power BI integration** in **Synapse Analytics Studio** by creating **Power BI dataset in Synapse** and **Power BI report in Synapse**
+- In this exercise, you have completed **Power BI integration** in **Synapse Analytics Studio** by creating **Power BI dataset in Synapse** and **Power BI report in Synapse**. Now you can move on to the next exercise by clicking on the Next button at the bottom right of this page.
