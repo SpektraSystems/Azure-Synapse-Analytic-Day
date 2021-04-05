@@ -163,4 +163,4 @@ In this task, you will browse your data lake using SQL On-demand.
 
 ## Summary
 
-- In this exercise you have completed exploring the **Data Lake** with **Synapse SQL On-demand** and **Synapse Spark**. Now you can move on to the next exercise by clicking on the Next button at the bottom right of this page.
+- In this exercise, you have completed exploring the **Data Lake** with **Synapse SQL On-demand** and **Synapse Spark**. Now you can move on to the next exercise by clicking on the Next button at the bottom right of this page.
