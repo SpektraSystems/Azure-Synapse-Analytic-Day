@@ -27,6 +27,30 @@ Please locate this value and note it for the steps below.
 
 In this task, you see how easy it is to write into a SQL Pool table with Spark thanks to the SQL Analytics Connector. Notebooks are used to write the code required to write to SQL Pool tables using Spark.
 
+1. Launch Azure Portal using the desktop icon on the JumpVM and login with the Azure credentials from the Lab Environment Details tab if not logged in already. Then select **Resource groups**.
+
+   ![Open Azure resource group](./media/00-open-resource-groups.png "Azure resource groups")
+
+2. Select the **Synapse Analytics** resource group.
+
+   ![Open Synapse Analytics resource group](./media/00-open-synapse-resource-group.png "Resources list")
+
+3. Select **SQLPool01** and **resume** it before starting the exercise if it is not running.
+
+   ![SQLPool01 is highlighted.](media/select-sql-pool.png "SQLPool01")
+
+   ![Resume sqlpool](./media/00-resume-sqlpool.png "Resume")
+
+4. Return to the resource group, then select the **Synapse Analytics** workspace.
+
+   ![Open Azure Synapse Analytics workspace](./media/00-open-workspace.png "Azure Synapse workspace")
+
+5. On the Synapse workspace blade, open Synapse Analytics Studio by navigating to the **Workspace web URL** from the overview page.
+
+   > You can also Open synapse studio by clicking on **Open** under **Getting started->Open synapse studio**
+
+   ![The Launch Synapse Studio button is highlighted on the Synapse workspace toolbar.](media/ex01-open-synapse-studio.png "Launch Synapse Studio")
+
 1. In Synapse Analytics Studio, select **Develop** from the left-hand menu.
 
    ![Develop is selected and highlighted in the Synapse Analytics menu.](media/develop-hub.png "Develop hub")
