@@ -1,8 +1,10 @@
 # Exercise 4 - High-Performance Analysis with Azure Synapse Dedicated SQL Pools
 
+## Overview
+
 In this exercise, you will use several of the capabilities associated with dedicated SQL Pools to analyze the data.
 
-SQL data warehouses have been for a long time the centers of gravity in data platforms. Modern data warehouses can provide high performance, distributed, and governed workloads, regardless of the data volumes at hand.
+SQL data warehouses have been for a long time the centers of gravity in data platforms. Modern data warehouses can provide high-performance, distributed, and governed workloads, regardless of the data volumes at hand.
 
 The dedicated SQL pool in Azure Synapse is the new incarnation of the former Azure SQL Data Warehouse. It provides all the modern SQL data warehousing features while benefiting from the advanced integration with all the other Synapse services.
 
@@ -69,7 +71,7 @@ First, let us set the stage by performing the following steps:
 
    ![Run a complex query on FactSale_Fast](./media/ex04-query-selection-04.png "Run script")
 
-   Re-run the query 3 to 5 times until the execution time stabilizes (usually, the first "cold" execution takes longer than subsequent ones who benefit from the initialization of various internal data and communications buffers). Make a note on the amount of time needed to run the query (typically 3 to 5 seconds).
+   Re-run the query 3 to 5 times until the execution time stabilizes (usually, the first "cold" execution takes longer than subsequent ones who benefit from the initialization of various internal data and communications buffers). Make a note of the amount of time needed to run the query (typically 3 to 5 seconds).
 
 ## Bonus Challenge
 
@@ -102,3 +104,9 @@ On the other hand, `wwi_perf.FactSale_Fast` is distributed using the hash of the
 Finally, the first two queries (the counts) were not that far apart performance-wise because none of them incurred any data movement (each distribution just reported its local counts, and then the results were aggregated).
 
 This simple example demonstrates one of the core challenges of modern, massively distributed data platforms - solid design. You witnessed first-hand how one decision taken at table design time can significantly influence the performance of queries. You also got a glimpse of Azure Synapse Analytics' raw power: the more efficient table design enabled a non-trivial query involving more than 80 million records to execute in just a few seconds.
+
+## Summary
+
+- In this exercise, you have completed **data analysis** with **Azure Synapse Dedicated SQL Pools** by using 
+  - a dedicated **SQL pool query** to understand a dataset 
+  - investigating query performance and table design
