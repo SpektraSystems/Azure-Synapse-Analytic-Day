@@ -12,7 +12,7 @@
 
       {
 
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/SpektraSystems/Azure-Synapse-Analytics-Day/v2-2022/README.md",
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/SpektraSystems/Azure-Synapse-Analytics-Day/guided-lab/README.md",
 
         "Order": 1
 
@@ -20,7 +20,7 @@
 
       {
 
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/SpektraSystems/Azure-Synapse-Analytics-Day/v2-2022/01-explore-data-lake.md",
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/SpektraSystems/Azure-Synapse-Analytics-Day/guided-lab/01-explore-data-lake.md",
 
         "Order": 2
 
@@ -28,7 +28,7 @@
 
       {
 
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/SpektraSystems/Azure-Synapse-Analytics-Day/v2-2022/02-build-modern-dw-pipelines.md",
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/SpektraSystems/Azure-Synapse-Analytics-Day/guided-lab/02-build-modern-dw-pipelines.md",
 
         "Order": 3
 
@@ -36,7 +36,7 @@
 
       {
 
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/SpektraSystems/Azure-Synapse-Analytics-Day/v2-2022/03-high-performance-analysis.md",
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/SpektraSystems/Azure-Synapse-Analytics-Day/guided-lab/03-high-performance-analysis.md",
 
         "Order": 4
 
@@ -44,7 +44,7 @@
 
       {
 
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/SpektraSystems/Azure-Synapse-Analytics-Day/v2-2022/04.1-lake-databases-database-templates.md",
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/SpektraSystems/Azure-Synapse-Analytics-Day/guided-lab/04.1-lake-databases-database-templates.md",
 
         "Order": 5
 
@@ -52,14 +52,14 @@
 
       {
 
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/SpektraSystems/Azure-Synapse-Analytics-Day/v2-2022/05-log-telemetry-analytics.md",
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/SpektraSystems/Azure-Synapse-Analytics-Day/guided-lab/05-log-telemetry-analytics.md",
 
         "Order": 6
 
       },
        {
 
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/SpektraSystems/Azure-Synapse-Analytics-Day/v2-2022/06-data-governance-purview.md",
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/SpektraSystems/Azure-Synapse-Analytics-Day/guided-lab/06-data-governance-purview.md",
 
         "Order": 7
 
@@ -67,14 +67,14 @@
       
             {
 
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/SpektraSystems/Azure-Synapse-Analytics-Day/v2-2022/07-power-bi-integration.md",
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/SpektraSystems/Azure-Synapse-Analytics-Day/guided-lab/07-power-bi-integration.md",
 
         "Order": 8
 
       },
             {
 
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/SpektraSystems/Azure-Synapse-Analytics-Day/v2-2022/08-data-science-with-spark.md",
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/SpektraSystems/Azure-Synapse-Analytics-Day/guided-lab/08-data-science-with-spark.md",
 
         "Order": 9
 
