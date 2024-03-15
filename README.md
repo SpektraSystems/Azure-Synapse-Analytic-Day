@@ -32,7 +32,7 @@ If you are using a hosted lab environment, please follow the steps below to get 
 
 ## Solution Architecture
 
-The diagram below provides a unified view of the exercises in the lab and their estimated times for completion.
+The diagram below provides a unified view of the exercises in the guided-lab and their estimated times for completion.
 
 ![Azure Synapse Analytics Lab Exercises](./media/exercises1.png "Solution architecture")
 
