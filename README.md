@@ -14,7 +14,7 @@ Recently WWI started to sell a variety of edible novelties such as chili chocola
 
 Wide World Importers is designing and implementing a Proof of Concept (PoC) for a unified data analytics platform. Their soft goal is to bring siloed teams to work together on a single platform.
 
-In this lab, you will play the role of various persons: a data engineer, a business analyst, and a data scientist. The workspace is already set up to focus on some of the core development capabilities of Azure Synapse Analytics.
+In this guided-lab, you will play the role of various persons: a data engineer, a business analyst, and a data scientist. The workspace is already set up to focus on some of the core development capabilities of Azure Synapse Analytics.
 
 By the end of this lab, you will have performed a non-exhaustive list of operations that combine the strength of Big Data and SQL analytics into a single platform.
 
@@ -32,7 +32,7 @@ If you are using a hosted lab environment, please follow the steps below to get 
 
 ## Solution Architecture
 
-The diagram below provides a unified view of the exercises in the lab and their estimated times for completion.
+The diagram below provides a unified view of the exercises in the guided-lab and their estimated times for completion.
 
 ![Azure Synapse Analytics Lab Exercises](./media/exercises1.png "Solution architecture")
 
