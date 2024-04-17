@@ -42,6 +42,14 @@ In this task, you will verify Data Explorer database is present and create a tab
 
    ![Validate table created with KQL script](media/analytics-ex5-salestele.png)
 
+  > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+	
+  - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+  - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+  - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+<validation step="33893e24-030e-40f9-acd2-417fad316448" />
+
 ## Task 2 - Perform manual data ingestion using a Synapse Pipeline
 
 In this task, you will trigger a Synapse Pipeline to perform manual data ingestion into the table created in Task 1.
@@ -51,6 +59,14 @@ In this task, you will trigger a Synapse Pipeline to perform manual data ingesti
    ![Import telemetry data with Synapse pipeline](media/ex05-import-data-with-synapse-pipeline.1.png)
 
 2. With the pipeline debug window open, wait until the pipeline completes (should take around 3 to 4 minutes).
+
+  > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+	
+  - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+  - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+  - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+<validation step="33893e24-030e-40f9-acd2-417fad316448" />
 
 ## Task 3 - Run KQL queries from Synapse Studio
 
