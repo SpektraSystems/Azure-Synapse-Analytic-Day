@@ -182,4 +182,12 @@ If you do not see a list of data fields under Fields, follow the steps below for
 
    ![The SQL query is displayed as described above.](media/pbi-07.png "Request content")
 
+  > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+	
+  - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+  - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+  - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+<validation step="3f7d7f59-58b6-4cbd-a84c-e879f6b6f784" />
+
    ## Proceed to exercise 8
