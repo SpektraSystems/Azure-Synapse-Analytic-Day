@@ -30,6 +30,14 @@ In this task you will create a new lake database.
 
     ![Configure lake database storage](./media/ex04-create-lake-database-2.png)
 
+  > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+	
+  - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+  - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+  - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+<validation step="d7b09ee7-b386-4358-a2e2-62bf57cba795" />
+
 ## Task 2 - Create a lake database table from data lake storage
 
 In this task you will create a new lake database table using files from the data lake storage account.
@@ -142,6 +150,14 @@ In this task you will create manually a new lake database table and map data int
     Select `OK` to finalize the process.
 
    ![Configure data mapping target](./media/ex04-configure-data-mapping-3.png)
+
+  > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+	
+  - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+  - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+  - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+<validation step="d989a028-6cb1-4973-9231-472309b8f810" />
 
 ## Task 4 - Create a complex lake database using database templates
 
