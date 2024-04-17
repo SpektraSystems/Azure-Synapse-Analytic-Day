@@ -87,3 +87,11 @@ In this exercise, you will use the model registered in Exercise 2 to perform pre
 7. Observe the results of the prediction.
 
     ![View prediction results](./media/ex08-prediction-results.png)
+
+  > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+	
+  - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+  - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+  - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+<validation step="2fcfc279-afd9-4a2c-b9ef-ac7d4b8e1de8" />
