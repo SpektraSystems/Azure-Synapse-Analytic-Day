@@ -120,7 +120,7 @@ If you do not see a list of data fields under Fields, follow the steps below for
 
    ![The Settings menu is displayed.](media/a1.5.png "Settings")
 
-4. Select the **Datasets** tab. From the list of datasets select `wwifactsales`, then select **Edit credentials** underneath the **Data Source credentials** section.
+4. Select the **Semantic models** tab. From the list of datasets select `wwifactsales`, then select **Edit credentials** underneath the **Data Source credentials** section.
 
    ![Changing settings for the wwifactsales dataset](media/y12.png "Changing settings for the wwifactsales dataset")
 
