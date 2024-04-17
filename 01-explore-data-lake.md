@@ -281,6 +281,6 @@ In this task, you will browse your data lake using SQL On-demand.
 
     > Without Adaptive Query Execution enabled, the group by and order by in this cell would result in over 400 tasks. Spark 3.0 has improved on these tuning options and introduced additional performance benefits which may be noticed when joining datasets and working with skewed data.
 
-<validation step="d20e6f30-60c0-4061-b31a-35a1be5f5712" />
+    <validation step="d20e6f30-60c0-4061-b31a-35a1be5f5712" />
 
 16. **Important**: If you are continuing to Exercise 2 now, _leave this notebook open for the first task_ of the next exercise. This way, you can continue to use this notebook and the running Spark session, saving you time.
