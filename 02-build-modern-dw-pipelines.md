@@ -6,10 +6,8 @@ The tasks you will perform in this exercise are:
 
 - Build Modern Data Warehouse pipelines
   - Task 1 - Explore and modify a notebook
-    - Bonus Challenge
   - Task 2 - Explore, modify, and run a Pipeline containing a Data Flow
   - Task 3 - Monitor pipelines
-    - Bonus Discovery
   - Task 4 - Monitor Spark applications
 
 ---
@@ -155,63 +153,6 @@ In this task, you see how easy it is to write into an SQL Pool table with Spark 
   - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 <validation step="13e4cc15-01f7-4923-9295-d9b559271984" />
-
-### Bonus exercise
-
-Now, take some time to review the **Exercise 2 - Bonus Notebook with CSharp** notebook.
-
-1. In Synapse Analytics Studio, select **Develop** from the left-hand menu. Expand **Notebooks** and select the notebook named `Exercise 2 - Bonus Notebook with CSharp`.
-
-   ![Open bonus notebook with CSharp from Develop hub](./media/ex02-csharp-for-spark-notebook.png "Open bonus notebook with CSharp from Develop hub")
-
-2. Notice the language of choice being C# for Spark:
-
-   ![CSharp for Spark](./media/ex02-csharp-for-spark.png)
-
-    This notebook demonstrates how easy it is to create and run notebooks using C# for Spark. The notebook shows the code for retrieving data from Azure Blob Storage and writing that into a staging table in Azure Synapse Analytics using a JDBC connection.
-
-    You can run each cell in this notebook and observe the output. Be aware, however, that writing data into a staging table in Azure Synapse Analytics with this notebook takes several minutes, so you don't need to wait for the notebook to finish before attempting to query the `wwi_staging.Sale_CSharp` table to observe the data being written or to move on to the next task.
-
-3. Select **Run all** and start the notebook.
-
-   > **Note**: If you get an error while performing this step, you can change the sparkpool to sparkpool02 and try re-running the steps.
-
-
-  **To observe the data being written into the table:**
-
-1. Select **Data** from the left-hand menu, select the Workspace tab, and then expand Databases, SQLPool01, and Tables.
-
-2. Right-click the table named `wwi_staging.Sale_CSharp`, and choose **New SQL Script** then **SELECT TOP 100 rows**.
-
-   ![A new Select Top 100 rows window command is selected for wwi_staging.Sale_CSharp.](./media/sale-csharp-new-script.1.png "New Script Window")
-
-   
-   > If you do not see the table, select the Actions ellipsis next to Tables, and then select **Refresh** from the fly-out menu.
- 
-
-3. Replace the existing query in the editor with the query below. 
-
-   ```sql
-   SELECT COUNT(*) FROM [wwi_staging].[Sale_CSharp]
-   ```
- 
-4. Select **Run** on the toolbar.
-   
-   ![CSharp for Spark](./media/ex02-csharp-for-spark-extra.png)
-   
-   > Re-run the query every 5-10 seconds to watch the count of records in the table, and how it changes as new records are being added by the notebook. The script in the notebook limits the number of rows to 1500, so if you see a count of 1500, the notebook has completed processing.
-   
-   **Important**: Close the SQL script by selecting the **X** in the top right of the tab and then select **Discard Changes**.
-
-5. Closing the notebook will ensure you free up the allocated resources on the Spark Pool.
-
-  > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-	
-  - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-  - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-  - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
-
-<validation step="69bdfb85-8da3-4044-80b3-5107dcaacc8c" />
 
 ## Task 2 - Explore, modify, and run a Pipeline containing a Data Flow
 
@@ -509,30 +450,6 @@ After you finish building and debugging your data flow and its associated pipeli
   - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 <validation step="b49fd917-9676-43fa-a48e-37d7384b71db" />
-
-### Bonus discovery
-
-Remember the sentiment analysis task we had in our Exercise 2 - Enrich Data Pipeline? Once your pipeline's execution is complete we have some sentiment data we can look into.
-
-1. Go to the **Data** Hub and navigate to the `dev > bronze > sentiment` **(2)** folder in the primary data lake account **(1)**. Select all the files and right-click to select **New SQL script > Select TOP 100 rows**.
-
-   >NOTE: Select all the files except the text file.
-
-   ![dev > bronze > sentiment folder in the Workspace data lake account is shown. All files are selected. Right click context menu is open. New SQL script > Select TOP 100 rows command is highlighted.](media/query-sentiment-json-files.1.png "Sentiment Folder")
-
-2. Replace the top part of the query **(1)** with the code below. Select **Run (2)** to execute the final query and review the **Results (3)**.
-
-    ```sql
-    SELECT 
-        jsonContent,
-        JSON_VALUE (jsonContent, '$.documents[0].sentiment') AS Sentiment,
-        JSON_VALUE (jsonContent, '$.documents[0].id') AS CustomerId
-    FROM
-    ```
-
-    ![A JSON SQL Query is shown. Sentiment Analysis results are listed.](media/sw-sentiment-run.png "JSON Query for Sentiments")
-
-    Your query targets the JSON files created as the result of the Sentiment analysis run through Azure Cognitive Services. Here you see a simple query that shows the list of Customer IDs and how their feedback is interpreted in the context of sentiment reflection.
     
 ## Task 4 - Monitor Spark applications
 
