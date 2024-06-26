@@ -98,14 +98,11 @@ In this task, you will explore the results of scanning the Synapse Analytics wor
     ![Open Purview Studio](./media/pp6.png)
 
     This will open Purivew Studio where you will perform the rest of the steps in this task.
-1. On the Microsoft preview page, click on **Open** to Access your classic portal.
-    ![](media/y14.png)
 
 2. In Purview Studio, navigate to the `Data map` hub, select `Sources` and then locate the Synapse Analytics source which is your Synapse Analytics workspace. Select **View details** to explore the configuration of the source.
     ![](media/E6-T4-S2.png)
     
     ![Locate Synpse Analytics source in Purview Studio](media/y15.png)
-    
 
 3. Note the details of the source:
 
@@ -121,7 +118,7 @@ In this task, you will explore the results of scanning the Synapse Analytics wor
 
     Make sure you select `Cancel` next to avoid updating the source connection properties.
 
-5. In Purview Studio, navigate to the `Data map` hub, select `Collections` and then select the root collection (which should be named `asapurviewNNNNNN` just like the Purview workspace). Select `Assets` to explore the list of assets available in the collection.
+5. In Purview Studio, navigate to the `Data map` hub, select `Domains` and then select the root collection (which should be named `asapurviewNNNNNN` just like the Purview workspace). Select `Assets` to explore the list of assets available in the collection.
 
     ![Purview collection](./media/ex06-purview-collection.png)
 
