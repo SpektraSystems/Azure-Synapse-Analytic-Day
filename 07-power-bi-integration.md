@@ -194,4 +194,4 @@ If you do not see a list of data fields under Fields, follow the steps below for
 
 <validation step="3f7d7f59-58b6-4cbd-a84c-e879f6b6f784" />
 
-   ## Proceed to exercise 8
+ 
