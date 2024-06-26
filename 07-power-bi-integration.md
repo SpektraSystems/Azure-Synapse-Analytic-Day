@@ -76,6 +76,10 @@ In this task, you will use Power BI Desktop to create the dataset used by the re
    
     >**Note:** You may be prompted to log in a second time. Follow the login prompts to log in with the credentials provided to you.
 
+    >**Note:** You may be prompted to save changes so click on **Save**.
+
+    ![Selecting Publish to Power BI from the File menu](media/2.png "Publish to Power BI")
+
 12. In the dialog that appears, select the provided Power BI workspace (the first one that appears under the `Power BI` section in the `Develop` hub). Do not select the item labelled My Workspace. Choose **Select**.
 
     ![Selecting the correct Power BI workspace](media/ex03-select-workspace.1.png "Select workspace")
