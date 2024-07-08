@@ -289,3 +289,5 @@ In this task, you will browse your data lake using SQL On-demand.
     <validation step="d20e6f30-60c0-4061-b31a-35a1be5f5712" />
 
 16. **Important**: If you are continuing to Exercise 2 now, _leave this notebook open for the first task_ of the next exercise. This way, you can continue to use this notebook and the running Spark session, saving you time.
+
+## Proceed to Exercise 2

@@ -71,15 +71,7 @@
 
         "Order": 8
 
-      },
-            {
-
-        "RawFilePath": "https://raw.githubusercontent.com/SpektraSystems/Azure-Synapse-Analytics-Day/guided-lab/08-data-science-with-spark.md",
-
-        "Order": 9
-
       }
-     
 
     ]
 
