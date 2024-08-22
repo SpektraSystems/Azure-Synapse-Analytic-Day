@@ -457,21 +457,21 @@ In this task, you examine the Apache Spark application monitoring capabilities b
 
 1. As you did in the previous task, select **Monitor** from the left-hand menu.
 
-   ![Monitor is selected and highlighted in the Synapse Analytics menu.](media/monitor-hub.png "Synapse Analytics menu")
+    ![Monitor is selected and highlighted in the Synapse Analytics menu.](media/monitor-hub.png "Synapse Analytics menu")
 
 2. Next, select **Apache Spark applications** under Activities.
 
-   ![Apache Spark applications is selected and highlighted under the Activities section of the monitor resource list.](media/ex2tsk4stp2.png "Synapse Analytics Monitor")
+    ![Apache Spark applications is selected and highlighted under the Activities section of the monitor resource list.](media/ex2tsk4stp2.png "Synapse Analytics Monitor")
 
 3. On the Apache Spark applications page, select the **Local time** value and observe the available options for limiting the time range for Spark applications that are displayed in the list. In this case, you are looking at the current run, so ensure **Last 24 hours** is selected and then select **OK**.
 
-   ![Last 24 hours is selected and highlighted in the Time range list.](media/ex02-monitor-activities-spark-time-range1.png "Synapse Analytics Monitor")
+    ![Last 24 hours is selected and highlighted in the Time range list.](media/ex02-monitor-activities-spark-time-range1.png "Synapse Analytics Monitor")
 
 4. From the list of Spark applications, select the first job, which should have a status of `In progress` or `Succeeded`.
 
    > **Note**: You may see a status of `Cancelled` or `Stopped`, and this does not prevent you from completing the following steps. Azure Synapse Analytics is still in preview, and the status gets set to `Cancelled` or `Stopped` when the Spark pool used to run the Spark application times out.
 
-   ![The current Spark application is highlighted in the applications list.](media/ex02-monitor-activities-spark-application-list.1.png "Synapse Analytics Monitor")
+    ![The current Spark application is highlighted in the applications list.](media/ex02-monitor-activities-spark-application-list.1.png "Synapse Analytics Monitor")
 
 5. On the **Dataflow** screen, you will see a detailed view of the job, broken into three different sections.
 
@@ -479,19 +479,19 @@ In this task, you examine the Apache Spark application monitoring capabilities b
    - The second section is a summary of the Spark application.
    - The third section displays the diagnostics and logs associated with the Spark application.
 
-   ![A screenshot of the Log query screen is displayed.](media/ex02-monitor-activities-spark-application-dataflow.1.png "Synapse Analytics Monitor")
+    ![A screenshot of the Log query screen is displayed.](media/ex02-monitor-activities-spark-application-dataflow.1.png "Synapse Analytics Monitor")
 
 6. Select the **Logs** tab to view the log output. You may switch between log sources and types, using the dropdown lists below.
 
-   ![The Spark application logs are displayed.](media/a1.1.png "Logs")
+    ![The Spark application logs are displayed.](media/a1.1.png "Logs")
    
 7. To look closer at any individual job, you can use the **Job IDs** drop-down to select the job number.
 
-   ![Job 2 is highlighted in the Job IDs drop-down list.](media/ex02-monitor-activities-spark-applications-all-job-ids-2.1.png "Synapse Analytics Monitor")
+    ![Job 2 is highlighted in the Job IDs drop-down list.](media/ex02-monitor-activities-spark-applications-all-job-ids-2.1.png "Synapse Analytics Monitor")
 
 8. This view isolates the specific job within the graphical view.
 
-   ![Job 2 is displayed.](media/ex02-monitor-activities-spark-applications-job-2.1.png "Synapse Analytics Monitor")
+    ![Job 2 is displayed.](media/ex02-monitor-activities-spark-applications-job-2.1.png "Synapse Analytics Monitor")
 
 9. Return the view to all jobs by selecting **All job IDs** in the job ID drop-down list.
 
