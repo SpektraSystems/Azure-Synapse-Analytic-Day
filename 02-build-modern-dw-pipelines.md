@@ -152,7 +152,7 @@ In this task, you see how easy it is to write into an SQL Pool table with Spark 
   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
   - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-<validation step="13e4cc15-01f7-4923-9295-d9b559271984" />
+  <validation step="13e4cc15-01f7-4923-9295-d9b559271984" />
 
 ## Task 2 - Explore, modify, and run a Pipeline containing a Data Flow
 
@@ -443,11 +443,11 @@ After you finish building and debugging your data flow and its associated pipeli
 
     ![The Gantt view option is selected and highlighted on the pipeline run dialog.](media/y7.png "Pipeline run Gantt view")
 
-   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+  > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 	
-   - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+  - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+  - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+  - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
    <validation step="b49fd917-9676-43fa-a48e-37d7384b71db" />
     
