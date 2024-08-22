@@ -499,11 +499,10 @@ In this task, you examine the Apache Spark application monitoring capabilities b
      ![All job IDs is highlighted in the Job IDs drop-down list.](media/ex02-monitor-activities-spark-applications-all-job-ids.1.png "Synapse Analytics Monitor")
 
 10. Within the graph section, you also have the ability to **Playback** the Spark application.
-    
 
-     ![The Playback button is highlighted.](media/ex02-monitor-activities-spark-applications-playback.1.png "Synapse Analytics Monitor")
+       ![The Playback button is highlighted.](media/ex02-monitor-activities-spark-applications-playback.1.png "Synapse Analytics Monitor")
 
-     >**Note**: Playback functionality is not available until the job status changes out of the `In progress` status. The job's status will remain listed as `In progress` until the underlying Spark resources are cleaned up by Azure Synapse Analytics, which can take some time.
+       >**Note**: Playback functionality is not available until the job status changes out of the `In progress` status. The job's status will remain listed as `In progress` until the underlying Spark resources are cleaned up by Azure Synapse Analytics, which can take some time.
 
 12. Running a Playback allows you to observe the time required to complete each job, as well as review the rows read or written as the job progresses.
 
