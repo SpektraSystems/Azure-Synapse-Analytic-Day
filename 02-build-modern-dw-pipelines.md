@@ -466,7 +466,7 @@ In this task, you examine the Apache Spark application monitoring capabilities b
 
 3. On the Apache Spark applications page, select the **Local time** value and observe the available options for limiting the time range for Spark applications that are displayed in the list. In this case, you are looking at the current run, so ensure **Last 24 hours** is selected and then select **OK**.
 
-      ![Last 24 hours is selected and highlighted in the Time range list.](media/ex02-monitor-activities-spark-time-range1.png "Synapse Analytics Monitor")
+     ![Last 24 hours is selected and highlighted in the Time range list.](media/ex02-monitor-activities-spark-time-range1.png "Synapse Analytics Monitor")
 
 4. From the list of Spark applications, select the first job, which should have a status of `In progress` or `Succeeded`.
 
@@ -500,9 +500,9 @@ In this task, you examine the Apache Spark application monitoring capabilities b
 
 10. Within the graph section, you also have the ability to **Playback** the Spark application.
 
-       ![The Playback button is highlighted.](media/ex02-monitor-activities-spark-applications-playback.1.png "Synapse Analytics Monitor")
+     ![The Playback button is highlighted.](media/ex02-monitor-activities-spark-applications-playback.1.png "Synapse Analytics Monitor")
 
-       > **Note**: Playback functionality is not available until the job status changes out of the `In progress` status. The job's status will remain listed as `In progress` until the underlying Spark resources are cleaned up by Azure Synapse Analytics, which can take some time.
+     > **Note**: Playback functionality is not available until the job status changes out of the `In progress` status. The job's status will remain listed as `In progress` until the underlying Spark resources are cleaned up by Azure Synapse Analytics, which can take some time.
 
 11. Running a Playback allows you to observe the time required to complete each job, as well as review the rows read or written as the job progresses.
 
