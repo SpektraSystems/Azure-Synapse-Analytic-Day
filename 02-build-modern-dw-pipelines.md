@@ -499,20 +499,21 @@ In this task, you examine the Apache Spark application monitoring capabilities b
      ![All job IDs is highlighted in the Job IDs drop-down list.](media/ex02-monitor-activities-spark-applications-all-job-ids.1.png "Synapse Analytics Monitor")
 
 10. Within the graph section, you also have the ability to **Playback** the Spark application.
+    
 
      ![The Playback button is highlighted.](media/ex02-monitor-activities-spark-applications-playback.1.png "Synapse Analytics Monitor")
 
      >**Note**: Playback functionality is not available until the job status changes out of the `In progress` status. The job's status will remain listed as `In progress` until the underlying Spark resources are cleaned up by Azure Synapse Analytics, which can take some time.
 
-11. Running a Playback allows you to observe the time required to complete each job, as well as review the rows read or written as the job progresses.
+12. Running a Playback allows you to observe the time required to complete each job, as well as review the rows read or written as the job progresses.
 
       ![A screenshot of an in-progress playback is displayed. The playback is at 8s into the Spark application run, and Job 2 is showing progress.](media/ex02-monitor-activities-spark-applications-playback-progress.1.png "Synapse Analytics Monitor")
 
-12. You can also perform playback on an individual job. Returning to a view of only Job 2, the **Playback** button shows the rows written at this job, and the progress of reads and writes.
+13. You can also perform playback on an individual job. Returning to a view of only Job 2, the **Playback** button shows the rows written at this job, and the progress of reads and writes.
 
        ![A screenshot of an in-progress playback for Job 2 is displayed.](media/ex02-monitor-activities-spark-applications-playback-job-2.1.png "Synapse Analytics Monitor")
 
-13. You can also change the view to see which jobs involved read and write activities. Select **All job IDs** in the job dropdown, and in the **View** drop-down, select **Read**. You can see which jobs performed reads, with each color-coded by how much data was read.
+14. You can also change the view to see which jobs involved read and write activities. Select **All job IDs** in the job dropdown, and in the **View** drop-down, select **Read**. You can see which jobs performed reads, with each color-coded by how much data was read.
 
        ![Read is selected and highlighted in the Display drop-down list.](media/ex02-monitor-activities-spark-applications-display-drop-down-read-graph.1.png "Synapse Analytics Monitor")
 
