@@ -443,13 +443,13 @@ After you finish building and debugging your data flow and its associated pipeli
 
     ![The Gantt view option is selected and highlighted on the pipeline run dialog.](media/y7.png "Pipeline run Gantt view")
 
-  > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 	
-  - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-  - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-  - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+   - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-<validation step="b49fd917-9676-43fa-a48e-37d7384b71db" />
+   <validation step="b49fd917-9676-43fa-a48e-37d7384b71db" />
     
 ## Task 4 - Monitor Spark applications
 
