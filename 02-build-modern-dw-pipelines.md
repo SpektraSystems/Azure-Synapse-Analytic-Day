@@ -450,7 +450,8 @@ After you finish building and debugging your data flow and its associated pipeli
   - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
    <validation step="b49fd917-9676-43fa-a48e-37d7384b71db" />
-    
+  
+  
 ## Task 4 - Monitor Spark applications
 
 In this task, you examine the Apache Spark application monitoring capabilities built into Azure Synapse Analytics. The Spark application monitoring screens provide a view of the logs for the Spark application, including a graphical view of those logs.
