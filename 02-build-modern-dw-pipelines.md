@@ -469,7 +469,7 @@ In this task, you examine the Apache Spark application monitoring capabilities b
 
 4. From the list of Spark applications, select the first job, which should have a status of `In progress` or `Succeeded`.
 
-   > **Note**: You may see a status of `Cancelled` or `Stopped`, and this does not prevent you from completing the following steps. Azure Synapse Analytics is still in preview, and the status gets set to `Cancelled` or `Stopped` when the Spark pool used to run the Spark application times out.
+      > **Note**: You may see a status of `Cancelled` or `Stopped`, and this does not prevent you from completing the following steps. Azure Synapse Analytics is still in preview, and the status gets set to `Cancelled` or `Stopped` when the Spark pool used to run the Spark application times out.
 
       ![The current Spark application is highlighted in the applications list.](media/ex02-monitor-activities-spark-application-list.1.png "Synapse Analytics Monitor")
 
