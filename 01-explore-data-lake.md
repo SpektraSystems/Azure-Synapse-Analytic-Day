@@ -78,9 +78,9 @@ In this task, you will browse your data lake using SQL On-demand.
 
 11. Once you are in `InvoiceDateKey=2012-01-01` right-click the Parquet file and select `New SQL script - Select TOP 100 rows`.
 
-   > A script is automatically generated. Run this script to see how SQL on-demand queries the file and returns the first 100 rows of that file with the header, allowing you to easily explore data in the file
+    > A script is automatically generated. Run this script to see how SQL on-demand queries the file and returns the first 100 rows of that file with the header, allowing you to easily explore data in the file
 
-   ![Start new SQL script from data lake file](./media/ex01-sql-on-demand-01.png "Create a new SQL script")
+    ![Start new SQL script from data lake file](./media/ex01-sql-on-demand-01.png "Create a new SQL script")
 
 12. Ensure the newly created script is connected to the `Built-in` pool and select `Run`. Data is loaded by the built-in SQL pool and processed as if it were coming from any regular relational database.
 
