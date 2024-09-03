@@ -120,4 +120,8 @@ In this task, you will load data from a Data Explorer table into a Spark datafra
 
    ![Count number of product searches](./media/ex05-load-data-explorer-query-into-spark-results-2.png)
 
+## Summary 
+
+In this exercise , we explored Azure Synapse's Data Explorer capabilities for log and telemetry analytics. We created a table for ingesting sales telemetry data, triggered data ingestion using a Synapse Pipeline, and ran KQL queries to analyze the data. Additionally, we loaded Data Explorer data into a Spark dataframe for further processing. This exercise enhanced our skills in managing and querying telemetry data, leveraging the powerful indexing and querying features of Azure Synapse Data Explorer.
+
    ## Proceed to Excercise 6
