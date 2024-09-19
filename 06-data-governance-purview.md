@@ -8,16 +8,15 @@ Azure Purview is a unified data governance solution that helps you manage and go
 
 Azure Synapse Analytics and Azure Purview workspaces are tightly integrated, enabling seamless data discovery and lineage.
 
+## Lab Objectives
+
 The tasks you will perform in this exercise are:
 
-- Exercise 6 - Data governance with Azure Purview
-  - Task 1 - Explore the integration of Azure Purview into the Azure Synapse Analytics workspace
-  - Task 2 - Trigger automatic data lineage tracking when executing a Synapse Pipeline
-  - Task 3 - Discover data assets using Azure Purview-powered search
-  - Task 4 - Explore the results of scanning an Azure Synapse Analytics workspace from Azure Purview
-  - Task 5 - Explore the results of data lineage tracking for Synapse Pipelines
-
---------------------------------
+- Task 1 - Explore the integration of Azure Purview into the Azure Synapse Analytics workspace
+- Task 2 - Trigger automatic data lineage tracking when executing a Synapse Pipeline
+- Task 3 - Discover data assets using Azure Purview-powered search
+- Task 4 - Explore the results of scanning an Azure Synapse Analytics workspace from Azure Purview
+- Task 5 - Explore the results of data lineage tracking for Synapse Pipelines
 
 ## Task 1 - Explore the integration of Azure Purview into the Azure Synapse Analytics workspace
 
@@ -162,4 +161,4 @@ This exercise demonstrated the integration between Azure Synapse Analytics and A
 
 In this exercise, we integrated Azure Purview with Azure Synapse Analytics to enhance data governance. We explored the connection between Synapse and Purview, triggered data lineage tracking through Synapse Pipelines, and discovered data assets using Purview-powered search. Additionally, we examined scan results and data lineage details within Purview Studio. This exercise demonstrated how Purview's automated data discovery and lineage tracking can provide comprehensive insights into data assets and their relationships, facilitating better data management and governance.
 
-## Proceed to exercise 7
+### You have successfully completed the lab
