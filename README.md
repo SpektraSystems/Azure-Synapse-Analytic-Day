@@ -1,6 +1,12 @@
 # Azure Synapse Analytics in a Day Lab
 
-## Wide World Importers
+### Overall Estimated Duration: 8 hours
+
+## Overview
+
+The Azure Synapse Analytics in a Day lab is a hands-on workshop that introduces participants to the capabilities of Azure Synapse Analytics, combining big data and data warehousing into a unified platform. Attendees will learn to ingest and prepare data from various sources, explore data warehousing concepts, and perform data analysis using SQL and Spark within Synapse Studio. The lab also covers integration with Power BI for interactive reporting and emphasizes security, monitoring, and best practices. Through guided exercises, participants will gain practical experience in leveraging Azure Synapse to drive data insights and enhance decision-making in an enterprise setting.
+
+### Wide World Importers
 
 Wide World Importers (WWI) is a wholesale novelty goods importer and distributor operating from the San Francisco Bay Area.
 
@@ -10,7 +16,7 @@ WWI buys goods from suppliers, including novelty and toy manufacturers, and othe
 
 Recently WWI started to sell a variety of edible novelties such as chili chocolates. The company previously did not have to handle chilled items. To meet food handling requirements, they must monitor the temperature in their chiller room and any of their trucks that have chiller sections.
 
-## Lab context
+### Lab context
 
 Wide World Importers is designing and implementing a Proof of Concept (PoC) for a unified data analytics platform. Their soft goal is to bring siloed teams to work together on a single platform.
 
@@ -18,77 +24,69 @@ In this guided-lab, you will play the role of various persons: a data engineer, 
 
 By the end of this lab, you will have performed a non-exhaustive list of operations that combine the strength of Big Data and SQL analytics into a single platform.
 
-### How to get started with a provided lab environment
+## Objective
 
-If you are using a hosted lab environment, please follow the steps below to get started:
+The objective of the lab is to equip participants with the foundational skills and practical experience needed to leverage Azure Synapse Analytics for data integration, preparation, and analysis. By the end of the workshop, attendees will be proficient in ingesting and transforming data from diverse sources, utilizing SQL and Spark for data exploration, and integrating with Power BI for effective reporting. This hands-on experience aims to empower participants to implement data-driven solutions that enhance decision-making and drive business insights within their organizations.
 
-1. Select the **Lab Environment** tab above the lab guide to copy the Azure credentials used for the lab. Make note of the `UniqueId` value. This value may be referenced at different points during the lab.
+- **Explore the data lake with Azure Synapse SQL On-demand and Azure Synapse Spark:** Enable users to efficiently query and analyze data stored in a data lake by utilizing Azure Synapse SQL On-demand for flexible querying and Azure Synapse Spark for advanced analytics, empowering teams to extract meaningful insights without the need for extensive data movement.
+  
+- **Build a Modern Data Warehouse with Azure Synapse Pipelines:** Facilitate the creation of an automated and scalable modern data warehouse by leveraging Azure Synapse Pipelines for seamless data ingestion, transformation, and orchestration, allowing organizations to integrate disparate data sources and deliver timely insights for decision-making.
 
-    ![The lab environment details are displayed.](media/ed1.png "Lab Environment")
+- **High-Performance Analysis with Azure Synapse Dedicated SQL Pools:** Optimize data retrieval and analysis performance through the implementation of dedicated SQL pools, which provide robust computational resources for handling complex queries on large datasets, ensuring rapid query execution and improved analytical capabilities.
+  
+- **Lake Databases and Database Templates:** Provide a structured approach to organizing and managing data in lake databases using pre-defined templates, streamlining data operations and enhancing data accessibility for analytics while maintaining consistency across different data sets.
+  
+- **Log and telemetry analytics:** Enable real-time monitoring and analysis of logs and telemetry data, allowing organizations to derive actionable insights into system performance, user behavior, and operational metrics, thereby facilitating proactive troubleshooting and optimization.
 
-2. Select the **Resources** tab to start the Virtual Machine (VM) provided for this lab. However, you do not need to use the VM to complete the lab. It is there for your convenience to make it easier to sign into Azure if you have an existing account and do not want to log out of it.
+- **Data governance with Azure Purview:** Implement comprehensive data governance practices using Azure Purview to ensure data compliance, discoverability, and management across the organization, thereby enhancing trust in data usage and facilitating regulatory adherence.
+  
+- **Power BI integration:** Enhance data visualization and reporting capabilities by seamlessly integrating Azure Synapse Analytics with Power BI, enabling users to create dynamic dashboards and interactive reports that provide real-time insights and support informed decision-making across the business.
 
-    ![The Virtual Machines are displayed and the Play button is highlighted.](media/prg1.png "Lab Resources")
+## Prerequisites
 
-## Solution Architecture
+Participants should have:
 
-The diagram below provides a unified view of the exercises in the guided-lab and their estimated times for completion.
+- **Basic Understanding of Cloud Computing:** Familiarity with cloud concepts and the Azure ecosystem, including Azure services and infrastructure.
+- **Familiarity with Data Concepts:** Understanding fundamental data concepts, such as databases, data lakes, data warehousing, and ETL (Extract, Transform, Load) processes.
+- **SQL Knowledge:** Basic proficiency in SQL for querying and manipulating data, as many tasks will involve writing SQL queries.
+- **Experience with Data Analytics:** Some exposure to data analytics principles and techniques to better grasp the analytical capabilities of Azure Synapse.
+- **Introduction to Azure Synapse Analytics:** Basic knowledge of Azure Synapse Analytics features and components to facilitate understanding of the workshop content.
+- **Familiarity with Data Visualization Tools:** Awareness of data visualization concepts and tools like Power BI will help participants leverage reporting capabilities effectively.
+- **Basic Programming Skills (Optional):** Familiarity with programming languages such as Python or R can be beneficial for using Azure Synapse Spark, although not mandatory.
+
+## Architechture
+
+Various Azure services work together to create a cohesive analytics architecture. Key services include **Azure Synapse Analytics** for data integration, transformation, and analysis; **Azure Data Lake Storage** for scalable data storage; **Azure Synapse Pipelines** for orchestrating data workflows; **Azure Synapse SQL On-demand** and **Spark** for querying and analyzing large datasets; **Azure Dedicated SQL Pools** for high-performance data warehousing; and **Azure Purview** for data governance and cataloging. The architecture facilitates a seamless flow of data from diverse sources into the data lake, where it can be transformed and stored as lake databases. Participants will leverage these services to build an end-to-end data solution, enabling efficient data ingestion, real-time analytics, and insightful reporting through **Power BI** integration, all within a unified environment designed to drive data-driven decision-making in organizations.
+
+## Architechture Diagram
 
 ![Azure Synapse Analytics Lab Exercises](./media/exercises1.png "Solution architecture")
 
-## Exercise 1 - Explore the data lake with Azure Synapse Serverless SQL Pool and Azure Synapse Spark
+## Explanation of Components
 
-In this exercise, you will explore data using the engine of your choice (SQL or Spark).
+The architecture for this lab involves the following key components:
 
-Understanding data through data exploration is one of the core challenges faced today by data engineers and data scientists as well. Depending on the data's underlying structure and the specific requirements of the exploration process, different data processing engines will offer varying degrees of performance, complexity, and flexibility.
+- **Azure Synapse Analytics:** A unified analytics service that integrates big data and data warehousing, providing a platform for data ingestion, processing, and analysis.
+- **Azure Data Lake Storage:** A scalable and secure data storage solution designed for big data analytics, enabling the storage of large volumes of structured and unstructured data.
+- **Azure Synapse SQL On-demand:** A serverless SQL query engine that allows users to run ad-hoc queries on data in Azure Data Lake without the need for provisioning resources.
+- **Azure Synapse Spark:** A fast, in-memory analytics engine that enables big data processing and machine learning using Apache Spark within Azure Synapse.
+- **Azure Synapse Pipelines:** A data integration service that orchestrates and automates data workflows, enabling seamless data ingestion and transformation from various sources.
+- **Azure Dedicated SQL Pools:** High-performance data warehousing solutions that provide dedicated resources for executing complex queries and analyzing large datasets efficiently.
+- **Lake Databases:** Structured databases within Azure Synapse that facilitate the organization and management of data in the data lake for easy access and analysis.
+- **Azure Purview:** A data governance service that helps discover, classify, and manage data across the organization, ensuring compliance and enhancing data quality.
+- **Power BI:** A business analytics tool that integrates with Azure Synapse to create interactive reports and dashboards, enabling data visualization and informed decision-making.
 
-In Azure Synapse Analytics, you have the possibility of using either the SQL Serverless engine, the big-data Spark engine, or both.
+## Support Contact
+ 
+The CloudLabs support team is available 24/7, 365 days a year, via email and live chat to ensure seamless assistance at any time. We offer dedicated support channels tailored specifically for both learners and instructors, ensuring that all your needs are promptly and efficiently addressed.
 
-## Exercise 2 - Working with Azure Synapse Pipelines
+Learner Support Contacts:
+- Email Support: labs-support@spektrasystems.com
+- Live Chat Support: https://cloudlabs.ai/labs-support
 
-In this exercise, you will use a pipeline with parallel activities to bring data into the Data Lake, transform it, and load it into the Azure Synapse SQL Pool. You will also monitor the progress of the associated tasks.
+Now, click on **Next** from the lower right corner to move on to the next page.
 
-Once data is properly understood and interpreted, moving it to the various destinations where processing steps occur is the next big task. Any modern data platform must provide a seamless experience for all the typical data-wrangling actions like extractions, parsing, joining, standardizing, augmenting, cleansing, consolidating, and filtering.
+![](../media/lab-next.png)
 
-Azure Synapse Analytics provides two significant categories of features - data flows and data orchestrations (implemented as pipelines). They cover the whole range of needs, from design and development to triggering, execution, and monitoring.
-
-## Exercise 3 - High-Performance Analysis with Azure Synapse Dedicated SQL Pools
-
-In this exercise, you will try to understand customer details using a query and chart visualizations. You will also explore the performance of various queries.
-
-SQL data warehouses have been for a long time the center of gravity in data platforms. Current data warehouses are capable of providing high-performance, distributed, and governed workloads, regardless of the data volumes at hand.
-
-The Azure Synapse SQL Pools in Azure Synapse Analytics is the new incarnation of the former Azure SQL Data Warehouse. It provides all the state-of-the-art SQL data warehousing features while benefiting from the advanced integration with all the other Synapse services.
-
-## Exercise 4 - Lake Databases and Database templates
-
-In this exercise, you will explore the concept of a lake database and you will learn how to use readily available database templates for lake databases.
-
-The lake database in Azure Synapse Analytics enables you to bring together database design, meta-information about the data that is stored and the possibility to describe how and where the data should be stored. Lake database addresses the challenge of today's data lakes where it is hard to understand how data is structured.
-
-## Exercise 5 - Log and telemetry analytics
-
-In this exercise, you will explore the capabilities of the newly integrated Data Explorer runtime in Synapse Analytics.
-
-Azure Synapse data explorer provides you with a dedicated query engine optimized and built for log and time series data workloads. With this new capability now part of Azure Synapse's unified analytics platform, you can easily access your machine and user data to surface insights that can directly improve business decisions. To complement the existing SQL and Apache Spark analytical runtimes, Azure Synapse data explorer is optimized for efficient log analytics, using powerful indexing technology to automatically index structured, semi-structured, and free-text data commonly found in telemetry data.
-
-## Exercise 6 - Data governance with Azure Purview
-
-In this exercise, you will use several of the capabilities provided by the integration between Azure Synapse Analytics and Azure Purview workspaces.
-
-Azure Purview is a unified data governance solution that helps you manage and govern your on-premises, multi-cloud, and software-as-a-service (SaaS) data. Purview enables you to easily create a holistic, up-to-date map of your data landscape with automated data discovery, sensitive data classification, and end-to-end data lineage. It also enables data consumers to find valuable, trustworthy data.
-
-Azure Synapse Analytics and Azure Purview workspaces are tightly integrated, enabling seamless data discovery and lineage.
-
-## Exercise 7 - Power BI integration
-
-In this exercise, you will build a Power BI report in Azure Synapse Analytics.
-
-The visual approach in data exploration, analysis, and interpretation is one of the essential tools for both technical users (data engineers, data scientists) and business users. Having a highly flexible and performant data presentation layer is a must for any modern data platform.
-
-Azure Synapse Analytics integrates natively with Power BI, a proven and highly successful data presentation and exploration platform. The Power BI experience is available inside Synapse Studio.
-
->**Extension module**
->
->The exercise is accompanied by a Power BI extension module with four additional (optional) exercises.
+### Happy Learning!!
 
