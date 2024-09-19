@@ -6,15 +6,14 @@ In this exercise, you will explore the capabilities of the newly integrated Data
 
 Azure Synapse data explorer provides you with a dedicated query engine optimized and built for log and time series data workloads. With this new capability now part of Azure Synapse's unified analytics platform, you can easily access your machine and user data to surface insights that can directly improve business decisions. To complement the existing SQL and Apache Spark analytical runtimes, Azure Synapse data explorer is optimized for efficient log analytics, using powerful indexing technology to automatically index structured, semi-structured, and free-text data commonly found in telemetry data.
 
+## Lab Objectives
+
 The tasks you will perform in this exercise are:
 
-- Exercise 5 - Log and telemetry analytics
-  - Task 1 - Create a table for data ingestion in the Data Explorer database 
-  - Task 2 - Perform manual data ingestion using a Synapse Pipeline
-  - Task 3 - Run KQL queries from Synapse Studio
-  - Task 4 - Load Data Explorer data into a Spark dataframe
- 
--------------------------
+- Task 1 - Create a table for data ingestion in the Data Explorer database 
+- Task 2 - Perform manual data ingestion using a Synapse Pipeline
+- Task 3 - Run KQL queries from Synapse Studio
+- Task 4 - Load Data Explorer data into a Spark dataframe
 
 ## Task 1 - Create a table for data ingestion in the Data Explorer database 
 
@@ -126,4 +125,4 @@ In this task, you will load data from a Data Explorer table into a Spark datafra
 
 In this exercise , we explored Azure Synapse's Data Explorer capabilities for log and telemetry analytics. We created a table for ingesting sales telemetry data, triggered data ingestion using a Synapse Pipeline, and ran KQL queries to analyze the data. Additionally, we loaded Data Explorer data into a Spark dataframe for further processing. This exercise enhanced our skills in managing and querying telemetry data, leveraging the powerful indexing and querying features of Azure Synapse Data Explorer.
 
-   ## Proceed to Excercise 6
+### You have successfully completed the lab
