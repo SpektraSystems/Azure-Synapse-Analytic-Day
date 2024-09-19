@@ -1,5 +1,7 @@
 # Exercise 6 - Data governance with Azure Purview
 
+### Estimated Duration: 60 minutes
+
 In this exercise, you will use several of the capabilities provided by the integration between Azure Synapse Analytics and Azure Purview workspaces.
 
 Azure Purview is a unified data governance solution that helps you manage and govern your on-premises, multi-cloud, and software-as-a-service (SaaS) data. Purview enables you to easily create a holistic, up-to-date map of your data landscape with automated data discovery, sensitive data classification, and end-to-end data lineage. It also enables data consumers to find valuable, trustworthy data.
