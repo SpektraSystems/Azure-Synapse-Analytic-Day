@@ -8,13 +8,12 @@ Understanding data through data exploration is one of the core challenges faced 
 
 In Azure Synapse Analytics, you can use either the SQL Serverless engine, the big-data Spark engine, or both.
 
+## Lab Objectives
+
 The tasks you will perform in this exercise are:
 
-- Explore the Data Lake with SQL On-demand and Spark
-  - Task 1 - Explore the Data Lake with Synapse SQL On-demand
-  - Task 2 - Explore the Data Lake with Synapse Spark
-  
---------------------------
+- Task 1 - Explore the Data Lake with Synapse SQL On-demand
+- Task 2 - Explore the Data Lake with Synapse Spark
 
 ## Task 1 - Explore the data lake with Azure Synapse SQL On-demand
 
@@ -296,4 +295,4 @@ In this task, you will browse your data lake using SQL On-demand.
 
 In this exercise, we explored a data lake using both Azure Synapse SQL On-demand and Azure Synapse Spark. We browsed through the data lake and queried Parquet and CSV files with SQL On-demand, learning to manage external data sources and build external tables. Then, we worked with Synapse Spark, loading and analyzing data from the data lake using PySpark, creating visualizations, and writing SQL queries against Delta Lake data. Throughout the exercise, we gained insights into using these powerful tools for data exploration and processing in Synapse Analytics.
 
-## Proceed to Exercise 2
+### You have successfully completed the lab
