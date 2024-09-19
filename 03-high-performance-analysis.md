@@ -1,5 +1,7 @@
 # Exercise 3 - High-Performance Analysis with Azure Synapse Dedicated SQL Pools
 
+### Estimated Duration: 30 minutes
+
 In this exercise, you will use several of the capabilities associated with dedicated SQL Pools to analyze the data.
 
 SQL data warehouses have been for a long time the centers of gravity in data platforms. Modern data warehouses can provide high-performance, distributed, and governed workloads, regardless of the data volumes at hand.
