@@ -1,5 +1,7 @@
 # Exercise 5 - Log and telemetry analytics
 
+### Estimated Duration: 30 minutes
+
 In this exercise, you will explore the capabilities of the newly integrated Data Explorer runtime in Synapse Analytics.
 
 Azure Synapse data explorer provides you with a dedicated query engine optimized and built for log and time series data workloads. With this new capability now part of Azure Synapse's unified analytics platform, you can easily access your machine and user data to surface insights that can directly improve business decisions. To complement the existing SQL and Apache Spark analytical runtimes, Azure Synapse data explorer is optimized for efficient log analytics, using powerful indexing technology to automatically index structured, semi-structured, and free-text data commonly found in telemetry data.
