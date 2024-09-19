@@ -1,5 +1,7 @@
 # Exercise 1 - Explore the data lake with Azure Synapse SQL On-demand and Azure Synapse Spark
 
+### Estimated Duration: 60 minutes
+
 In this exercise, you will explore data using the engine of your choice (SQL or Spark).
 
 Understanding data through data exploration is one of the core challenges faced today by data engineers and data scientists as well. Depending on the underlying structure of the data as well as the specific requirements of the exploration process, different data processing engines will offer varying degrees of performance, complexity, and flexibility.
