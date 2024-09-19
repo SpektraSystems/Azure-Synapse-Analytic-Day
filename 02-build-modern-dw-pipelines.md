@@ -4,15 +4,14 @@
 
 In this exercise, you examine various methods for ingesting data into Azure Synapse Analytics and Azure Data Lake Storage Gen2. You use notebooks and Data Flows to ingest, transform, and load data.
 
+## Lab Objectives
+
 The tasks you will perform in this exercise are:
 
-- Build Modern Data Warehouse pipelines
-  - Task 1 - Explore and modify a notebook
-  - Task 2 - Explore, modify, and run a Pipeline containing a Data Flow
-  - Task 3 - Monitor pipelines
-  - Task 4 - Monitor Spark applications
-
----
+- Task 1 - Explore and modify a notebook
+- Task 2 - Explore, modify, and run a Pipeline containing a Data Flow
+- Task 3 - Monitor pipelines
+- Task 4 - Monitor Spark applications
 
 **Important**:
 
@@ -522,4 +521,4 @@ In this task, you examine the Apache Spark application monitoring capabilities b
 
 In this exercise, you explore data ingestion methods into Azure Synapse Analytics and Azure Data Lake Storage Gen2. First, you'll use a notebook to load CSV data from ADLS Gen2 into a Synapse SQL Pool table via Spark and the SQL Analytics Connector. Then, you will modify a pipeline that uses Data Flows and Code-free AI to perform sentiment analysis on customer feedback, loading the data into a Synapse table. This involves configuring data sources, transformations, and sinks in Data Flows to process and load the enriched data into Synapse Analytics.
 
-## Proceed to Exercise 3
+### You have successfully completed the lab
