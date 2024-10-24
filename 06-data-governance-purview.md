@@ -161,4 +161,4 @@ This exercise demonstrated the integration between Azure Synapse Analytics and A
 
 In this exercise, we integrated Azure Purview with Azure Synapse Analytics to enhance data governance. We explored the connection between Synapse and Purview, triggered data lineage tracking through Synapse Pipelines, and discovered data assets using Purview-powered search. Additionally, we examined scan results and data lineage details within Purview Studio. This exercise demonstrated how Purview's automated data discovery and lineage tracking can provide comprehensive insights into data assets and their relationships, facilitating better data management and governance.
 
-### You have successfully completed the lab
+### You have successfully completed the lab. Select Next >> to continue to the next exercise.

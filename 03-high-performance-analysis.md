@@ -44,9 +44,9 @@ In this task, you will try to understand who your best customers are.
 7. For the Category column, leave the selection at `(none)`.
 8. For the Legend (series) column, select `CustomerKey`.
 
-![Example Chart](media/ex05-chart.1.png "Example chart")
+   ![Example Chart](media/ex05-chart.1.png "Example chart")
 
->**Note**: If you are not able to see the expected data in the bar chart. Please save the bar chart as an image and open it. You'll be able to see the data as expected.
+   >**Note**: If you are not able to see the expected data in the bar chart. Please save the bar chart as an image and open it. You'll be able to see the data as expected.
 
 ## Task 2 - Investigate query performance and table design
 
@@ -107,14 +107,6 @@ Can you explain the significant difference in performance between the two seemin
 5. Repeat the same actions for the `wwi_perf.FactSale_Fast` table and note the `DISTRIBUTION = HASH ( [CustomerKey] )` option used to distribute the table.
 
    ![View Hash Distribution](media/ex04-view-hash-distribution.1.png "Hash Distribution")
- 
-  > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-	
-  - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-  - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-  - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
-
-<validation step="317c3271-7f3e-4655-a044-8283170fac48" />
 
 This is the critical difference that has such a significant impact on the last two queries' performance. Because `wwi_perf.FactSale_Slow` is distributed in a round-robin fashion, each customer's data will end up living in multiple (if not all) distributions. When our query needs to consolidate each customer's data, a lot of data movement will occur between the distributions. This is what slows down the query significantly.
 
@@ -132,4 +124,4 @@ This simple example demonstrates one of the core challenges of modern, massively
 
 In this exercise, we analyzed data using Azure Synapse Dedicated SQL Pools. We explored SQL Pool queries to gain insights into customer purchasing behavior and examined the performance differences between two fact tables with different distribution methods. We learned that table design, particularly distribution strategy, can significantly impact query performance. Additionally, we experienced how optimized data distribution can dramatically reduce query execution time, highlighting the importance of thoughtful table design in modern data platforms.
 
-### You have successfully completed the lab
+### You have successfully completed the lab. Select Next >> to continue to the next exercise.

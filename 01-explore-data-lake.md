@@ -25,21 +25,21 @@ In this task, you will browse your data lake using SQL On-demand.
  
    * Azure Password: <inject key="AzureAdUserPassword"></inject>
 
-   ![Open Azure resource group](./media/gs.png "Azure resource groups")
+        ![Open Azure resource group](./media/gs.png "Azure resource groups")
    
-   > **Note**: If you are presented with **Help us protect your account** dialog box, then select **Skip for now** option.
+        > **Note**: If you are presented with **Help us protect your account** dialog box, then select **Skip for now** option.
 
-     ![Open Azure resource group](./media/MFA.png "MFA")
+        ![Open Azure resource group](./media/MFA.png "MFA")
    
 2. In the Azure Portal, select **Resource groups**.
 
    ![Open Azure resource group](./media/00-open-resource-groups.png "Azure resource groups")
 
-3. Select the **Synapse Analytics** resource group.
+3. Select the **Synapse-AIAD-<inject key="uniqueId" enableCopy="false"/>** resource group.
 
    ![Open Synapse Analytics resource group](media/resourcegroup11.png "Resources list")
 
-4. Select **SQLPool01** and **resume** it before starting the exercise.
+4. Select **SQLPool01** and **resume** it before starting the exercise. Select **Yes** on the pop-up.
 
    ![SQLPool01 is highlighted.](media/select-sql-pool11.png "SQLPool01")
 
@@ -77,7 +77,7 @@ In this task, you will browse your data lake using SQL On-demand.
 
 10. Inside the selected file system, double-click to navigate to `factsale-parquet` -> `2012` -> `Q1` -> `InvoiceDateKey=2012-01-01` **(5)**.
 
-11. Once you are in `InvoiceDateKey=2012-01-01` right-click the Parquet file and select `New SQL script - Select TOP 100 rows`.
+11. Once you are in `InvoiceDateKey=2012-01-01` **(1)** right-click the Parquet file and select `New SQL script (2) - Select TOP 100 rows` **(3)**.
 
     > A script is automatically generated. Run this script to see how SQL on-demand queries the file and returns the first 100 rows of that file with the header, allowing you to easily explore data in the file
 
@@ -94,12 +94,10 @@ In this task, you will browse your data lake using SQL On-demand.
     - In line 3, replace `TOP 100 *` with `COUNT(*)`.
     - In line 6, replace the path to the individual file with
 
-    ```python
-    https://<yourdatalake storage account name>.dfs.core.windows.net/wwi/factsale-parquet/2012/Q1/*/*
-    ```
-    ![Run SQL on-demand script loading multiple CSV data lake files](./media/y1.png)
-
-    > **Note:** Replace **yourdatalakestorageaccountname** with the <inject key="Storage Account Name"></inject>
+        ```python
+        https://<inject key="Storage Account Name"></inject>.dfs.core.windows.net/wwi/factsale-parquet/2012/Q1/*/*
+        ```
+        ![Run SQL on-demand script loading multiple CSV data lake files](./media/y1.png)
 
 14. Select `Run` to re-run the script. You should see a result of `2991716`, which is the number of records contained in all the Parquet files within the `factsale-parquet/2012/Q1` directory.
 
@@ -109,13 +107,13 @@ In this task, you will browse your data lake using SQL On-demand.
 
     ![Develop hub.](media/develop-hub.png "Develop hub")
 
-16. Expand **SQLScripts** and select the `Exercise 1 - Read with SQL on-demand` SQL script. Connect to **Built-in** and select **SQLOnDemand01** as the database. Select **Run** to execute the script.
+16. Expand **SQLScripts** and select the `Exercise 1 - Read with SQL on-demand` **(1)** SQL script. Connect to **Built-in (2)** and select **SQLOnDemand01 (3)** as the database. Select **Run (4)** to execute the script.
 
-    >**Note**: In case **SQLOnDemand01** database is not present. Please run the below-mentioned commands. Replace 'yourdatalakestorageaccountname' with the <inject key="Storage Account Name"></inject>
+    >**Note**: In case **SQLOnDemand01** database is not present. Please run the below-mentioned commands.
 
     ```sql
     CREATE DATABASE SQLOnDemand01
-    CREATE CREDENTIAL [https://<primary_storage>.dfs.core.windows.net]
+    CREATE CREDENTIAL [https://<inject key="Storage Account Name"></inject>.dfs.core.windows.net]
     WITH IDENTITY='User Identity';
     ```
 
@@ -185,7 +183,7 @@ In this task, you will browse your data lake using SQL On-demand.
 
 ## Task 2 - Explore the data lake with Azure Synapse Spark
 
-1. Navigate to the `Data` hub, browse to the data lake storage account folder `wwi/factsale-parquet/2012/Q1/InvoiceDateKey=2012-01-01`, then right-click the Parquet file and select `New notebook->Load to DataFrame`
+1. Navigate to the `Data` hub, browse to the data lake storage account folder `wwi/factsale-parquet/2012/Q1/InvoiceDateKey=2012-01-01`, then right-click the Parquet file and select `New notebook -> Load to DataFrame`
 
    ![Start new Spark notebook from data lake file](./media/ex01-spark-notebook-001.png "Create a new Spark notebook")
 
@@ -214,7 +212,7 @@ In this task, you will browse your data lake using SQL On-demand.
 
    ![Improve dataset formatting in Spark notebook](./media/ex01-spark-notebookrun-04.png "Execute notebook")
 
-7. Notice the included charting capabilities that enable visual exploration of your data. Switch to the **Chart** view. Select **View Options** and change the **Key** to `CustomerKey` and **Values** to `CityKey` and then click on the Apply button.
+7. Notice the included charting capabilities that enable visual exploration of your data. Switch to the **Chart (1)** view. Select **View Options (2)** and change the **Key** to `CustomerKey` **(3)** and **Values** to `CityKey` **(4)** and then click on the **Apply (5)** button.
 
     ![View charts on data in Spark notebook](./media/ex1tsk2stp7.1.png "Review charted data")
     
@@ -295,4 +293,4 @@ In this task, you will browse your data lake using SQL On-demand.
 
 In this exercise, we explored a data lake using both Azure Synapse SQL On-demand and Azure Synapse Spark. We browsed through the data lake and queried Parquet and CSV files with SQL On-demand, learning to manage external data sources and build external tables. Then, we worked with Synapse Spark, loading and analyzing data from the data lake using PySpark, creating visualizations, and writing SQL queries against Delta Lake data. Throughout the exercise, we gained insights into using these powerful tools for data exploration and processing in Synapse Analytics.
 
-### You have successfully completed the lab
+### You have successfully completed the lab. Select Next >> to continue to the next exercise.
