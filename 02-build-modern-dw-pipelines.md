@@ -31,17 +31,13 @@ In this task, you see how easy it is to write into an SQL Pool table with Spark 
 
    ![Develop is selected and highlighted in the Synapse Analytics menu.](media/develop-hub.png "Develop hub")
 
-2. Select **+**, then **Notebook** to add a new notebook.
+2. Select **+ (1)**, then **Notebook (2)** to add a new notebook.
 
    ![The new notebook menu item is highlighted.](media/new-notebook.png "New notebook")
 
-3. If not already attached, attach your Spark Compute **SparkPool02** by selecting it from the **Attach to** drop-down list and attach **PySpark(Python)** by selecting it from **Language** drop-down list, then select **+ code** to create a new cell.
+3. If not already attached, attach your Spark Compute **SparkPool02** by selecting it from the **Attach to** drop-down list and attach **PySpark(Python)** by selecting it from **Language** drop-down list.
 
    ![The Spark pool is selected in the Attach to drop-down.](media/ex2tsk2stp3.png "Add code")
-
-   **Note:** If you are using your notebook from the end of Exercise 1, select language **PySpark(Python)** from the drop-down hover over the area just below the cell in the notebook select **+ Code** to add a new cell.
-
-   ![The add code button is highlighted.](media/ex2tsk2stp3.1.png "Add code")
 
 4. Paste the following into the new cell and **replace** `YOUR_DATALAKE_NAME` with your storage account name **<inject key="Storage Account Name"></inject>**.
 
@@ -107,13 +103,13 @@ In this task, you see how easy it is to write into an SQL Pool table with Spark 
     
     This code writes the data retrieved from Blob Storage into a staging table in Azure Synapse Analytics using the SQL Analytics connector. Using the connector simplifies connecting to Azure Synapse Analytics because it uses AAD pass-through. There is no need to create a password, identity, external table, or format sources, as it is all managed by the connector.
 
-10. As the cell runs, select the arrow icon below the cell to expand the details for the Spark job. After approximately 1-2 minutes, the execution of Cell 3 will be complete. Once it completes move on to the next step.
+10. As the cell runs, select the arrow icon below the cell to expand the details for the Spark job. Once it completes move on to the next step.
 
     > This pane allows you to monitor the underlying Spark jobs, and observe the status of each. As you can see, the cell is split into two Spark jobs, and the progress of each can be observed. We will take a more in-depth look at monitoring Spark applications in Task 4 below.
 
     ![The Spark job status pane is displayed below the cell, with the progress of each Spark job visible.](media/ex02-notebook-ingest-cell-3-spark-job.png "Spark Job status")
 
-11. Close the notebook by selecting the **X** in the top right of the tab and then select **Close + discard changes**. Closing the notebook will ensure you free up the allocated resources on the Spark Pool.
+11. Close the notebook by selecting the **X** in the top right of the tab, select **Stop session**. Then select **Close + discard changes** Closing the notebook will ensure you free up the allocated resources on the Spark Pool.
      
     ![The Close + discard changes button is highlighted.](media/closenotebook.png "closenotebook")
 
@@ -125,11 +121,11 @@ In this task, you see how easy it is to write into an SQL Pool table with Spark 
 
     ![Data is selected and highlighted in the Synapse Analytics menu.](media/data-hub.png "Data hub")
 
-13. Under **Workspace** tab expand **SQL databases** and then expand the **SQLPool01** database.
+13. Under **Workspace (1)** tab expand **SQL databases (2)** and then expand the **SQLPool01 (3)** database.
 
     ![The Databases folder is expanded, showing a list of databases within the Azure Synapse Analytics workspace. SQLPool01 is expanded and highlighted.](media/ex2tsk2stp13.png "Synapse Analytics Databases")
 
-14. Expand **Tables** and locate the table named `wwi_staging.Sale`.
+14. Expand **Tables (1)** and locate the table named `wwi_staging.Sale` **(2)**.
 
     > **Note**: If you do not see the table, select the Actions ellipsis next to Tables and then select **Refresh** from the fly-out menu.
 
@@ -139,7 +135,7 @@ In this task, you see how easy it is to write into an SQL Pool table with Spark 
 
     ![The Actions ellipsis button is highlighted next to the wwi_staging.Sale_UNIQUEID table.](media/ex02-data-sqlpool01-tables-staging-wwi-sales-data-actions.png "Synapse Analytics Databases")
 
-16. In the Actions menu, select **New SQL script > Select TOP 100 rows**.
+16. In the Actions menu, select **New SQL script (1) > Select TOP 100 rows (2)**.
 
     ![In the Actions menu for the wwi_staging.Sale table, New SQL script > Select TOP 100 rows is highlighted.](media/ex02-data-sqlpool01-tables-staging-wwi-sales-data-actions-select.png "Synapse Analytics Databases")
 
@@ -176,7 +172,7 @@ In this task, you use a Pipeline that implements Code-free AI to do sentiment an
    > - a copy data activity named `Import Customer dimension`
    > - a mapping data flow activity named `Enrich Customer Data`.
 
-3. Now, take a closer look at each of the activities within the pipeline. On the canvas graph, select the **Lookup** activity named `ReadComments` and switch to the **Settings** tab. The source dataset is set to a CSV file stored in the data lake.
+3. Now, take a closer look at each of the activities within the pipeline. On the canvas graph, select the **Lookup (1)** activity named `ReadComments` and switch to the **Settings (2)** tab. The source dataset is set to a CSV file stored in the data lake.
 
    > A lookup activity reads and returns the content of a file which can be consumed in a subsequent copy, transformation, or control flow activities like ForEach activity. The Lookup activity output supports up to 4 MB in size. In this case, the source is set to a single CSV file that is much smaller. For larger data sets multiple source files can be used.
 
@@ -523,4 +519,4 @@ In this task, you examine the Apache Spark application monitoring capabilities b
 
 In this exercise, you explore data ingestion methods into Azure Synapse Analytics and Azure Data Lake Storage Gen2. First, you'll use a notebook to load CSV data from ADLS Gen2 into a Synapse SQL Pool table via Spark and the SQL Analytics Connector. Then, you will modify a pipeline that uses Data Flows and Code-free AI to perform sentiment analysis on customer feedback, loading the data into a Synapse table. This involves configuring data sources, transformations, and sinks in Data Flows to process and load the enriched data into Synapse Analytics.
 
-### You have successfully completed the lab
+### You have successfully completed the lab. Select Next >> to continue to the next exercise.

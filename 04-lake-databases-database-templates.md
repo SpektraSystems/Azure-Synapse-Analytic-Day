@@ -16,19 +16,19 @@ The tasks you will perform in this exercise are:
 
 In this task you will create a new lake database.
 
-1. In Synapse Studio, navigate to the `Data` hub, select the `Workspace` section and then select `+` followed by `Lake database` to trigger the creation of a new lake database.
+1. In Synapse Studio, navigate to the `Data` **(1)** hub, select the `Workspace` section and then select `+` **(2)** followed by `Lake database` **(3)** to trigger the creation of a new lake database.
 
    ![Initiate the creation of a lake database](./media/ex4tsk1stp1.png)
 
 2. Configure the properties of the lake database as follows:
 
-     - Name: `Database1`
-     - Input folder: `database1/`
-     - Data format: `Parquet`
+     - Name: `Database1` **(1)**
+     - Input folder: `database1/` **(2)**
+     - Data format: `Parquet` **(3)**
 
-    Select `Publish` to publish the new lake database.
+     - Select `Publish` **(4)** to publish the new lake database.
 
-    ![Configure lake database storage](./media/ex04-create-lake-database-2.png)
+         ![Configure lake database storage](./media/ex04-create-lake-database-2.png)
 
   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 	
@@ -42,27 +42,25 @@ In this task you will create a new lake database.
 
 In this task you will create a new lake database table using files from the data lake storage account.
 
-1. In Synapse Studio, navigate to the `Data` hub and select the data lake account under `Linked`, `Azure Data Lake Storage Gen2`.
+1. In Synapse Studio, navigate to the `Data` **(1)** hub and select the data lake account under `Linked` **(2)**, `Azure Data Lake Storage Gen2` **(3)**.
 
-2. Select the `database1` file system, and then select the `fact-sale` folder, followed by the `Day=20191201` folder. In this folder, locate the `sale-small-20191201-snappy.parquet` file.
+2. Select the `database1` **(4)** file system, and then select the `fact-sale` **(5)** folder, followed by the `Day=20191201` **(6)** folder. In this folder, locate the `sale-small-20191201-snappy.parquet` **(7)** file.
 
    ![Explore data lake source data](./media/ex04-explore-data-lake-source-data.png)
 
 3. In Synapse Studio, navigate to the `Data` hub, and select the `Workspace` section followed by `Lake database`.
 
-4. In the context menu associated with the `Database1` database, hover to database 1 click on three elipses and select `Open` to edit the lake database.
-
-    In the database editor, select `+ Table` followed by `From data lake`.
+4. In the context menu associated with the `Database1` database, hover to database 1 click on three elipses and select `Open` to edit the lake database. In the database editor, select `+ Table` **(1)** followed by `From data lake` **(2)**.
 
    ![Create table from data lake storage](./media/ex04-create-table-from-data-lake.png)
 
-5. Configure the properties of the new table as follows, then select `Continue`:
+5. Configure the properties of the new table as follows, then select `Continue` **(4)**:
 
-    - External table name: `FactSale`
-    - Linked service: `asadatalake01`
-    - Input file or folder: `database1/fact-sale`
+    - External table name: `FactSale` **(1)**
+    - Linked service: `asadatalake01` **(2)**
+    - Input file or folder: `database1/fact-sale` **(3)**
 
-   ![Configure table from data lake storage](./media/ex04-configure-table-from-data-lake.png)
+      ![Configure table from data lake storage](./media/ex04-configure-table-from-data-lake.png)
 
 3. Select `Preview Data`.
 
@@ -72,7 +70,7 @@ In this task you will create a new lake database table using files from the data
 
    ![Preview data for table from data lake storage](./media/ex04-preview-table-from-data-lake-2.png)
 
-5. In the table designer, select `Columns`, followed by `+ Column` and `Partition column`.
+5. In the table designer, select `Columns` **(1)**, followed by `+ Column` **(2)** and `Partition column` **(3)**.
 
    ![Add partition column to table](./media/ex04-add-partition-column.png)
 
@@ -96,13 +94,13 @@ In this task you will create a new lake database table using files from the data
 
 In this task you will create manually a new lake database table and map data into it from the data lake storage account.
 
-1. In Synapse Studio, navigate to the `Data` hub, and select the `Workspace` section followed by `Lake database`. In the context menu associated with the `Database1` database, select `Open` to edit the lake database.
+1. In Synapse Studio, navigate to the `Data` **(1)** hub, and select the `Workspace` **(2)** section followed by `Lake database` **(3)**. In the context menu associated with the `Database1` **(4)** database, select `Open` **(5)** to edit the lake database.
 
    > **Note**: If you are not able to see `Database1`, refresh the page and try again.
 
    ![Open the lake database editor](./media/ex04-edit-lake-database.png)
 
-2. In the database editor, select `+ Table` followed by `Custom`. Set the name of the table to `Customer`.
+2. In the database editor, select `+ Table` **(1)** followed by `Custom` **(2)**. Set the name of the table to `Customer` **(3)**.
 
    ![Create a custom table](./media/ex04-custom-table-name.png)
 
@@ -112,11 +110,11 @@ In this task you will create manually a new lake database table and map data int
     - `FirstName` (type string)
     - `LastName` (type string)
 
-   ![Create columns for the custom table](./media/ex04-custom-table-columns.png)
+      ![Create columns for the custom table](./media/ex04-custom-table-columns.png)
 
-    >IMPORTANT
-    >
-    >The table must be **published** before advancing to the next step, otherwise the data flow debug session will not be able to start properly.
+      >IMPORTANT
+      >
+      >The table must be **published** before advancing to the next step, otherwise the data flow debug session will not be able to start properly.
 
 4. In the table editor, select `Map data` to start the Map Data tool.If this is the first time you are doing this, you might pe prompted to turn on data flow debug. If this happens, leave the default selections and select `OK` to start the data flow debug session.
 
@@ -183,4 +181,4 @@ In this task you will use a lake database template from the Synapse Knowledge Ce
 
    ![Configure banking database](./media/ex04-configure-banking-database.png)
 
-   ## Proceed to exercise 5
+### You have successfully completed the lab. Select Next >> to continue to the next exercise.
