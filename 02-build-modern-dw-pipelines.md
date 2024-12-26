@@ -149,7 +149,7 @@ In this task, you see how easy it is to write into an SQL Pool table with Spark 
 	
   - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-  - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+  - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
   <validation step="13e4cc15-01f7-4923-9295-d9b559271984" />
 
@@ -446,7 +446,7 @@ After you finish building and debugging your data flow and its associated pipeli
 	
   - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-  - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+  - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
    <validation step="b49fd917-9676-43fa-a48e-37d7384b71db" />
   
@@ -519,4 +519,4 @@ In this task, you examine the Apache Spark application monitoring capabilities b
 
 In this exercise, you explore data ingestion methods into Azure Synapse Analytics and Azure Data Lake Storage Gen2. First, you'll use a notebook to load CSV data from ADLS Gen2 into a Synapse SQL Pool table via Spark and the SQL Analytics Connector. Then, you will modify a pipeline that uses Data Flows and Code-free AI to perform sentiment analysis on customer feedback, loading the data into a Synapse table. This involves configuring data sources, transformations, and sinks in Data Flows to process and load the enriched data into Synapse Analytics.
 
-### You have successfully completed the lab. Select Next >> to continue to the next exercise.
+### You have successfully completed the lab.

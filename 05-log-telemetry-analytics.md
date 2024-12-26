@@ -47,7 +47,7 @@ In this task, you will verify Data Explorer database is present and create a tab
 	
   - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-  - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+  - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 <validation step="33893e24-030e-40f9-acd2-417fad316448" />
 
@@ -65,7 +65,7 @@ In this task, you will trigger a Synapse Pipeline to perform manual data ingesti
 	
   - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-  - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+  - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 <validation step="3280e9ca-da0f-459b-bffd-ea1461c654f9" />
 
@@ -125,4 +125,4 @@ In this task, you will load data from a Data Explorer table into a Spark datafra
 
 In this exercise , we explored Azure Synapse's Data Explorer capabilities for log and telemetry analytics. We created a table for ingesting sales telemetry data, triggered data ingestion using a Synapse Pipeline, and ran KQL queries to analyze the data. Additionally, we loaded Data Explorer data into a Spark dataframe for further processing. This exercise enhanced our skills in managing and querying telemetry data, leveraging the powerful indexing and querying features of Azure Synapse Data Explorer.
 
-### You have successfully completed the lab. Select Next >> to continue to the next exercise.
+### You have successfully completed the lab.

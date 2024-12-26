@@ -284,7 +284,7 @@ In this task, you will browse your data lake using SQL On-demand.
 	
   - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-  - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+  - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
     <validation step="d20e6f30-60c0-4061-b31a-35a1be5f5712" />
 
 16. **Important**: If you are continuing to Exercise 2 now, _leave this notebook open for the first task_ of the next exercise. This way, you can continue to use this notebook and the running Spark session, saving you time.
@@ -293,4 +293,4 @@ In this task, you will browse your data lake using SQL On-demand.
 
 In this exercise, we explored a data lake using both Azure Synapse SQL On-demand and Azure Synapse Spark. We browsed through the data lake and queried Parquet and CSV files with SQL On-demand, learning to manage external data sources and build external tables. Then, we worked with Synapse Spark, loading and analyzing data from the data lake using PySpark, creating visualizations, and writing SQL queries against Delta Lake data. Throughout the exercise, we gained insights into using these powerful tools for data exploration and processing in Synapse Analytics.
 
-### You have successfully completed the lab. Select Next >> to continue to the next exercise.
+### You have successfully completed the lab.
