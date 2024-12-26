@@ -62,7 +62,7 @@ In this task, you will trigger the execution of a Synapse Pipeline to generate d
 	
   - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-  - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+  - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 <validation step="b123a179-1f12-4d32-854e-bafc977d9f15" />
 
@@ -112,7 +112,7 @@ In this task, you will explore the results of scanning the Synapse Analytics wor
     - The number of classified assets
     - The scans that have been performed so far on the source
 
-    ![Synapse Analytics source details in Purview Studio](./media/ex06-purview-synapse-analytics-source-details-1.png)
+      ![Synapse Analytics source details in Purview Studio](./media/ex06-purview-synapse-analytics-source-details-1.png)
 
 4. Select `Edit data source` to view the details of the connection to the Synapse Analytics workspace.
 
@@ -144,7 +144,7 @@ In this task, you will explore the results of scanning the Synapse Analytics wor
     - Updated on (notice how the update was performed by `Synapse`; the time of the update should approximately match the finish time of the Synapse pipeline you triggered in Task 2)
     - Hierarchy
 
-    ![Synapse Pipeline asset details](media/E6-T5-S2.png)
+      ![Synapse Pipeline asset details](media/E6-T5-S2.png)
 
 3. Select the `Lineage` tab to view the detailed lineage data.
 
@@ -161,4 +161,4 @@ This exercise demonstrated the integration between Azure Synapse Analytics and A
 
 In this exercise, we integrated Azure Purview with Azure Synapse Analytics to enhance data governance. We explored the connection between Synapse and Purview, triggered data lineage tracking through Synapse Pipelines, and discovered data assets using Purview-powered search. Additionally, we examined scan results and data lineage details within Purview Studio. This exercise demonstrated how Purview's automated data discovery and lineage tracking can provide comprehensive insights into data assets and their relationships, facilitating better data management and governance.
 
-### You have successfully completed the lab. Select Next >> to continue to the next exercise.
+### You have successfully completed the lab.
