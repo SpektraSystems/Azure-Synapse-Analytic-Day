@@ -4,9 +4,10 @@ In this exercise you will explore the concept of a lake database and you will le
 
 The lake database in Azure Synapse Analytics enables you to bring together database design, meta information about the data that is stored and a possibility to describe how and where the data should be stored. Lake database addresses the challenge of today's data lakes where it is hard to understand how data is structured.
 
+## Lab Objectives
+
 The tasks you will perform in this exercise are:
 
-- Exercise 4 - Lake Databases and Database templates
   - Task 1 - Create and configure a lake database
   - Task 2 - Create a lake database table from data lake storage
   - Task 3 - Create a custom lake database table and map data into it
@@ -25,10 +26,9 @@ In this task you will create a new lake database.
      - Name: `Database1` **(1)**
      - Input folder: `database1/` **(2)**
      - Data format: `Parquet` **(3)**
-
      - Select `Publish` **(4)** to publish the new lake database.
 
-         ![Configure lake database storage](./media/ex04-create-lake-database-2.png)
+       ![Configure lake database storage](./media/ex04-create-lake-database-2.png)
 
   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 	
@@ -113,7 +113,6 @@ In this task you will create manually a new lake database table and map data int
       ![Create columns for the custom table](./media/ex04-custom-table-columns.png)
 
       >IMPORTANT
-      >
       >The table must be **published** before advancing to the next step, otherwise the data flow debug session will not be able to start properly.
 
 4. In the table editor, select `Map data` to start the Map Data tool.If this is the first time you are doing this, you might pe prompted to turn on data flow debug. If this happens, leave the default selections and select `OK` to start the data flow debug session.
@@ -132,13 +131,13 @@ In this task you will create manually a new lake database table and map data int
     - Source linked service: `asadatalake01`
     - Dataset type: `DelimitedText`
 
-   ![Configure data mapping settings](./media/ex4tsk3img1.png)
+      ![Configure data mapping settings](./media/ex4tsk3img1.png)
    
     - Folder path: `database1-staging`
     - Sources: select the `customer.csv` file
     - Select `Continue` to proceed.
 
-   ![Select source file for data mapping](./media/ex3tsk3img2.png)
+      ![Select source file for data mapping](./media/ex3tsk3img2.png)
 
 7. Configure the data mapping properties as follows:
 
@@ -180,5 +179,9 @@ In this task you will use a lake database template from the Synapse Knowledge Ce
 5. In Synapse Studio, open the newly created lake database in the editor and explore its content.
 
    ![Configure banking database](./media/ex04-configure-banking-database.png)
+
+## Summary
+
+In this Exercise , we explored the concept of lake databases in Azure Synapse Analytics. We successfully created and configured a lake database, built tables from data lake storage, and manually mapped data into custom lake database tables. Additionally, we used a database template to create a complex lake database. Throughout the exercise, we learned how to organize, describe, and map data within a data lake, enhancing our understanding of the structure and management of data in Azure Synapse Analytics.
 
 ### You have successfully completed the lab.
