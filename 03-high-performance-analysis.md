@@ -84,7 +84,7 @@ First, let us set the stage by performing the following steps:
 	
   - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-  - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+  - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 <validation step="588ca3b4-a20e-414f-889e-28331d3962ad" />
 
@@ -124,4 +124,4 @@ This simple example demonstrates one of the core challenges of modern, massively
 
 In this exercise, we analyzed data using Azure Synapse Dedicated SQL Pools. We explored SQL Pool queries to gain insights into customer purchasing behavior and examined the performance differences between two fact tables with different distribution methods. We learned that table design, particularly distribution strategy, can significantly impact query performance. Additionally, we experienced how optimized data distribution can dramatically reduce query execution time, highlighting the importance of thoughtful table design in modern data platforms.
 
-### You have successfully completed the lab. Select Next >> to continue to the next exercise.
+### You have successfully completed the lab.
