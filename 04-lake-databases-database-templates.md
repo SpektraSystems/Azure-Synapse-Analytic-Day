@@ -34,7 +34,7 @@ In this task you will create a new lake database.
 	
   - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-  - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+  - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 <validation step="d7b09ee7-b386-4358-a2e2-62bf57cba795" />
 
@@ -153,7 +153,7 @@ In this task you will create manually a new lake database table and map data int
 	
   - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-  - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+  - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 <validation step="d989a028-6cb1-4973-9231-472309b8f810" />
 
@@ -181,4 +181,4 @@ In this task you will use a lake database template from the Synapse Knowledge Ce
 
    ![Configure banking database](./media/ex04-configure-banking-database.png)
 
-### You have successfully completed the lab. Select Next >> to continue to the next exercise.
+### You have successfully completed the lab.
