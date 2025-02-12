@@ -14,8 +14,6 @@ Azure Synapse Analytics provides two significant categories of features - data f
 
 This lab provides hands-on experience in building a modern data warehouse using Azure Synapse Analytics. Participants will ingest, transform, and load data using Synapse Notebooks, Data Flows, and Pipelines, while also learning to monitor pipeline execution and Spark application performance.
 
-- **Validate lab environment**: Ensure the Azure Synapse environment is correctly set up.
-- **Data Ingestion**: Load data into Azure Synapse Analytics and Azure Data Lake Storage Gen2.
 - **Explore and modify a notebook**: Use Synapse Notebooks to process and transform data.
 - **Explore, modify, and run a Pipeline containing a Data Flow**: Perform ETL operations using Data Flows.
 - **Monitor pipelines**: Track execution status, analyze logs, and troubleshoot errors.
@@ -53,7 +51,7 @@ The architecture for this lab involves several key components:
   
 ## Getting Started with Lab
 
-Welcome to the PL-900 Microsoft Power Platform Fundamentals Lab! We've prepared an interactive environment for you to explore Power Apps, Power Automate, and Power BI. 
+Welcome to the SQL Datawarehouse with Syanpse Lab! We've prepared an interactive environment for you to explore Synapse Pipelines, Notebooks, Data Flows, and Spark monitoring. 
 
 ## Accessing Your Lab Environment
  
