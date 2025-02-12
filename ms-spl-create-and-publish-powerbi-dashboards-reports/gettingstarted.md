@@ -34,7 +34,7 @@ This lab follows a modern data warehouse architecture using Azure Synapse Analyt
 
 ## Architechture Diagram
 
-![](media/finalarch.png)
+![](../media/s2.PNG)
 
 ## Explanation of Components
 
@@ -57,7 +57,7 @@ Welcome to the SQL Datawarehouse with Syanpse Lab! We've prepared an interactive
  
 Once you're ready to dive in, your virtual machine and **Lab Guide** will be right at your fingertips within your web browser.
 
-   ![](./media/i3.jpg)  
+   ![](../media/s1.png) 
 
 ## Virtual Machine & Lab Guide
 
@@ -69,25 +69,25 @@ In the integrated environment, the lab VM serves as the designated workspace, wh
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
 
-   ![Create storage by clicking confirm.](./media/i4.jpg)
+   ![](../media/s3.png)
  
 ## Utilizing the Split Window Feature
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
  
-   ![](./media/i5.jpg)
+   ![](../media/s4.png)
  
 ## Managing Your Virtual Machine
  
 Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
  
-   ![](./media/i7.jpg)
+   ![](../media/s5.png)
 
 ## Lab Guide Zoom In/Zoom Out
  
 To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
 
-   ![](./media/zoomoutin.png)
+   ![](../media/s6.png)
 
 ## Support Contact
  
