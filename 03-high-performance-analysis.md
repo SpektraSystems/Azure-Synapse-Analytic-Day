@@ -80,6 +80,7 @@ First, let us set the stage by performing the following steps:
 
      Re-run the query 3 to 5 times until the execution time stabilizes (usually, the first "cold" execution takes longer than subsequent ones that benefit from the initialization of various internal data and communications buffers). Make a note of the amount of time needed to run the query (typically 3 to 5 seconds).
 
+<!--
   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 	
   - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
@@ -87,6 +88,7 @@ First, let us set the stage by performing the following steps:
   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 <validation step="588ca3b4-a20e-414f-889e-28331d3962ad" />
+-->
 
 ## Bonus Challenge
 
