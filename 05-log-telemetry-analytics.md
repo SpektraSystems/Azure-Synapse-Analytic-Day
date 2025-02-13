@@ -98,7 +98,11 @@ In this task, you will load data from a Data Explorer table into a Spark datafra
 1. In Synapse Studio, navigate to the `Data` **(1)** hub, locate the `SalesTelemetry` **(2)** table, select the `...` **(3)** context menu activator, and then select `New notebook **(4)** > Load to DataFrame` **(5)**.
 
    ![Load Data Explorer table into Spark dataframe](media/ex05-load-data-explorer-query-into-spark.1.png)
+   
+   > **Note:** If the `SalesTelemetry` table does not appear, click on **Refresh (2)** to reload the data.
 
+   ![Load Data Explorer table into Spark dataframe](media/ex05-load-data-explorer-query-into-spark.1a.png)   
+   
     This will open a Spark notebook with some PySpark code that loads data from the `SalesTelemetry` table into a Spark dataframe.
 
 2. In the `Attach to` dropdown, select the `SparkPool01` Spark bool and then select the run button to run the notebook.

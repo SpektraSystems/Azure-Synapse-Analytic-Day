@@ -28,7 +28,23 @@ In this task, you will explore the connection between Synapse Analytics and a Pu
 
     ![Azure Purview connection in Azure Synapse Analytics workspace](./media/preview-updated.png)
 
-3. Notice the Azure Purview workspace that is already connected to the Azure Synapse Analytics workspace.
+    > **Note:** If the status of **Azure Preview** shows as **Not Connected**, click on **Disconnect (1)** perform the bleow step.
+    
+    ![Azure Purview connection in Azure Synapse Analytics workspace](./media/preview-updateda.png)
+
+3. Confirm by clicking **Disconnect** in the pop-up window.
+
+    ![Azure Purview connection in Azure Synapse Analytics workspace](./media/preview-updatedb.png)
+
+4. In the **Microsoft Purview** portal, click on **Connect to a Purview Account**.
+
+    ![Azure Purview connection in Azure Synapse Analytics workspace](./media/preview-updatedc.png)
+
+5. Select your **Purview account name** from the list and click **Apply (2)**.
+
+    ![Azure Purview connection in Azure Synapse Analytics workspace](./media/preview-updatedd.png)
+
+6. Notice the Azure Purview workspace that is already connected to the Azure Synapse Analytics workspace.
 
     This connection enables two categories of functionalities:
 
