@@ -9,21 +9,10 @@ In this exercise, you examine various methods for ingesting data into Azure Syna
 In this lab, you will perform:
 
   - Task 1 - Explore and modify a notebook
-    - Bonus Challenge
   - Task 2 - Explore, modify, and run a Pipeline containing a Data Flow
   - Task 3 - Monitor pipelines
     - Bonus Discovery
   - Task 4 - Monitor Spark applications
-
----
-
-**Important**:
-
-In the tasks below, you will be asked to enter a unique identifier in several places. You can find your unique identifier by looking at the username you were provided for logging into the Azure portal. Your username is in the format `odl_user_UNIQUEID@msazurelabs.onmicrosoft.com`, where the _UNIQUEID_ component looks like `206184`, `206137`, or `205349`, as examples.
-
-Please locate this value and note it for the steps below.
-
----
 
 ## Task 1 - Explore and modify a notebook
 
@@ -197,63 +186,6 @@ In this task, you see how easy it is to write into a SQL Pool table with Spark t
    - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 <validation step="0ed2a2e6-1b08-4524-a785-7ec3111f94c9" />
-
-### Bonus exercise
-
-Now, take some time to review the **Exercise 2 - Bonus Notebook with CSharp** notebook.
-
-1. In Synapse Analytics Studio, select **Develop** from the left-hand menu. Expand **Notebooks** and select the notebook named `Exercise 2 - Bonus Notebook with CSharp`.
-
-   ![Open bonus notebook with CSharp from Develop hub](./../media/ex02-csharp-for-spark-notebook.png "Open bonus notebook with CSharp from Develop hub")
-
-2. Notice the language of choice being C# for Spark:
-
-   ![CSharp for Spark](./../media/ex02-csharp-for-spark.png)
-
-    This notebook demonstrates how easy it is to create and run notebooks using C# for Spark. The notebook shows the code for retrieving data from Azure Blob Storage and writing that into a staging table in Azure Synapse Analytics using a JDBC connection.
-
-    You can run each cell in this notebook and observe the output. Be aware, however, that writing data into a staging table in Azure Synapse Analytics with this notebook takes several minutes, so you don't need to wait on the notebook to finish before attempting to query the `wwi_staging.Sale_CSharp` table to observe the data being written or to move on to the next task.
-
-3. Select **Run all** and start the notebook.
-
-   > **Note**: If you get error while performing this step, you can change the sparkpool to sparkpool02 and try re-running the steps.
-
-
-  **To observe the data being written into the table:**
-
-1. Select **Data** from the left-hand menu, select the Workspace tab, then expand Databases, SQLPool01, and Tables.
-
-2. Right-click the table named `wwi_staging.Sale_CSharp`, and choose **New SQL Script** then **SELECT TOP 100 rows**.
-
-   ![A new Select Top 100 rows window command is selected for wwi_staging.Sale_CSharp.](./../media/sale-csharp-new-script.1.png "New Script Window")
-
-   
-   > If you do not see the table, select the Actions ellipsis next to Tables, and then select **Refresh** from the fly-out menu.
- 
-
-3. Replace the existing query in the editor with the query below. 
-
-   ```sql
-   SELECT COUNT(*) FROM [wwi_staging].[Sale_CSharp]
-   ```
- 
-4. Select **Run** on the toolbar.
-   
-   ![CSharp for Spark](./../media/ex02-csharp-for-spark-extra.png)
-   
-   > Re-run the query every 5-10 seconds to watch the count of records in the table, and how it changes as new records are being added by the notebook. The script in the notebook limits the number of rows to 1500, so if you see a count of 1500, the notebook has completed processing.
-   
-   **Important**: Close the SQLscript by selecting the **X** in the top right of the tab and then select **Discard Changes**.
-
-5. Closing the notebook will ensure you free up the allocated resources on the Spark Pool.
-
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-      
-   - If you receive a success message, you can proceed to the next task.
-   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
-
-<validation step="d6fd28e4-f8e2-49c2-800e-c32b8ba02f48" />
 
 ## Task 2 - Explore, modify, and run a Pipeline containing a Data Flow
 
