@@ -14,16 +14,6 @@ In this lab, you will perform:
     - Bonus Discovery
   - Task 4 - Monitor Spark applications
 
----
-
-**Important**:
-
-In the tasks below, you will be asked to enter a unique identifier in several places. You can find your unique identifier by looking at the username you were provided for logging into the Azure portal. Your username is in the format `odl_user_UNIQUEID@msazurelabs.onmicrosoft.com`, where the _UNIQUEID_ component looks like `206184`, `206137`, or `205349`, as examples.
-
-Please locate this value and note it for the steps below.
-
----
-
 ## Task 1 - Explore and modify a notebook
 
 In this task, you see how easy it is to write into a SQL Pool table with Spark thanks to the SQL Analytics Connector. Notebooks are used to write the code required to write to SQL Pool tables using Spark.
