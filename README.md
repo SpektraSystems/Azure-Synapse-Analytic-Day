@@ -96,13 +96,13 @@ In the integrated environment, the lab VM serves as the designated workspace, wh
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
  
-  ![](media/env01.png)
+  ![](media/env01a.png)
  
 ## Utilizing the Split Window Feature
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
  
-  ![](media/split01.png)
+  ![](media/split01a.png)
 
 ## Lab Guide Zoom In/Zoom Out
  
@@ -114,7 +114,7 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
  
 Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
 
-  ![](media/resourses.png)
+  ![](media/resoursesa.png)
 
 ## Let's Get Started with Azure Portal
  
