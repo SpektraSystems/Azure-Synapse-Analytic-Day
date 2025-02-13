@@ -40,11 +40,10 @@ This lab follows a modern data warehouse architecture using Azure Synapse Analyt
 
 The architecture for this lab involves several key components:
 
-- Azure Synapse Analytics : A unified analytics platform that enables large-scale data integration, transformation, and analysis using SQL pools, Spark pools, and Synapse Pipelines.
+- **Azure Synapse Analytics** : A unified analytics platform that enables large-scale data integration, transformation, and analysis using SQL pools, Spark pools, and Synapse Pipelines.
 - **Azure Data Lake Storage Gen2** : A scalable storage solution designed for big data analytics, used to store raw and processed data before loading it into Synapse.
 - **Synapse Pipelines** : A data integration tool that automates ETL (Extract, Transform, Load) operations, enabling seamless data movement between sources and destinations.
 - **Synapse Notebooks** : Interactive notebooks powered by Apache Spark, used for data exploration, transformation, and machine learning tasks.
-- **Data Flows** : A low-code ETL solution within Synapse Pipelines that allows users to visually design and execute data transformation processes.
 - **Spark Pools** : A distributed computing environment within Synapse Analytics, used for executing Spark-based workloads efficiently.
 - **Azure Monitor & Log Analytics** : Tools that provide real-time monitoring, diagnostics, and performance tracking for Synapse Pipelines and Spark applications.
 - **Synapse Studio** : A web-based development environment for managing and orchestrating Synapse resources, including Pipelines, Notebooks, and Data Flows.
