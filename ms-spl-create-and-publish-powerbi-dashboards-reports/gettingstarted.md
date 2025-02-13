@@ -14,8 +14,6 @@ Azure Synapse Analytics provides two significant categories of features - data f
 
 This lab provides hands-on experience in building a modern data warehouse using Azure Synapse Analytics. Participants will ingest, transform, and load data using Synapse Notebooks, Data Flows, and Pipelines, while also learning to monitor pipeline execution and Spark application performance.
 
-- **Validate lab environment**: Ensure the Azure Synapse environment is correctly set up.
-- **Data Ingestion**: Load data into Azure Synapse Analytics and Azure Data Lake Storage Gen2.
 - **Explore and modify a notebook**: Use Synapse Notebooks to process and transform data.
 - **Explore, modify, and run a Pipeline containing a Data Flow**: Perform ETL operations using Data Flows.
 - **Monitor pipelines**: Track execution status, analyze logs, and troubleshoot errors.
@@ -36,30 +34,29 @@ This lab follows a modern data warehouse architecture using Azure Synapse Analyt
 
 ## Architechture Diagram
 
-![](media/finalarch.png)
+![](../media/s2.PNG)
 
 ## Explanation of Components
 
 The architecture for this lab involves several key components:
 
-- Azure Synapse Analytics : A unified analytics platform that enables large-scale data integration, transformation, and analysis using SQL pools, Spark pools, and Synapse Pipelines.
+- **Azure Synapse Analytics** : A unified analytics platform that enables large-scale data integration, transformation, and analysis using SQL pools, Spark pools, and Synapse Pipelines.
 - **Azure Data Lake Storage Gen2** : A scalable storage solution designed for big data analytics, used to store raw and processed data before loading it into Synapse.
 - **Synapse Pipelines** : A data integration tool that automates ETL (Extract, Transform, Load) operations, enabling seamless data movement between sources and destinations.
 - **Synapse Notebooks** : Interactive notebooks powered by Apache Spark, used for data exploration, transformation, and machine learning tasks.
-- **Data Flows** : A low-code ETL solution within Synapse Pipelines that allows users to visually design and execute data transformation processes.
 - **Spark Pools** : A distributed computing environment within Synapse Analytics, used for executing Spark-based workloads efficiently.
 - **Azure Monitor & Log Analytics** : Tools that provide real-time monitoring, diagnostics, and performance tracking for Synapse Pipelines and Spark applications.
 - **Synapse Studio** : A web-based development environment for managing and orchestrating Synapse resources, including Pipelines, Notebooks, and Data Flows.
   
 ## Getting Started with Lab
 
-Welcome to the PL-900 Microsoft Power Platform Fundamentals Lab! We've prepared an interactive environment for you to explore Power Apps, Power Automate, and Power BI. 
+Welcome to the SQL Datawarehouse with Syanpse Lab! We've prepared an interactive environment for you to explore Synapse Pipelines, Notebooks, Data Flows, and Spark monitoring. 
 
 ## Accessing Your Lab Environment
  
 Once you're ready to dive in, your virtual machine and **Lab Guide** will be right at your fingertips within your web browser.
 
-   ![](./media/i3.jpg)  
+   ![](../media/s9.png) 
 
 ## Virtual Machine & Lab Guide
 
@@ -71,36 +68,94 @@ In the integrated environment, the lab VM serves as the designated workspace, wh
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
 
-   ![Create storage by clicking confirm.](./media/i4.jpg)
+   ![](../media/s3.png)
  
 ## Utilizing the Split Window Feature
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
  
-   ![](./media/i5.jpg)
+   ![](../media/s4.png)
  
 ## Managing Your Virtual Machine
  
 Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
  
-   ![](./media/i7.jpg)
+   ![](../media/s5.png)
 
 ## Lab Guide Zoom In/Zoom Out
  
 To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
 
-   ![](./media/zoomoutin.png)
+   ![](../media/s6.png)
+
+## Lab Validation   
+
+1. After completing the task, hit the **Validate** button under Validation tab integrated within your lab guide. If you receive a success message, you can proceed to the next task, if not, carefully read the error message and retry the step, following the instructions in the lab guide.
+
+   ![](../media/s8.png)
+
+## Let's Get Started with Azure Portal
+ 
+1. On your virtual machine, click on the **Azure Portal** icon as shown below:
+ 
+   ![](../media/s10.png)
+1. On the **Sign in to Microsoft Azure** tab you will see the login screen, in that enter the following email/username, and click on **Next**. 
+
+   * **Email/Username**: <inject key="AzureAdUserEmail"></inject>
+   
+     ![](../media/s11.png)
+     
+1. Now enter the following password and click on **Sign in**.
+   
+   * **Password**: <inject key="AzureAdUserPassword"></inject>
+   
+     ![](../media/s12.png)
+
+1. If you see the pop-up **Stay Signed in?**, click **No**.
+1. If **Action required** pop-up window appears, click on **Next**.
+1. On **Start by getting the app** page, click on **Next**.
+1. Click on **Next** twice.
+1. In **android**, go to the play store and Search for **Microsoft Authenticator** and Tap on **Install**.
+
+   ![](../media/s14.jpg)
+
+   > Note:For Ios, Open app store and repeat the steps.
+
+   > Note: Skip If already installed.
+
+1. Open the app and tap on **Scan a QR code**.
+1. Scan the QR code visible on the screen and click on **Next**.
+
+   ![QR code](../media/s15.png)
+
+1. Enter the digit displayed on the Screen in the Authenticator app on mobile and tap on **Yes**.
+1. Once the notification is approved, click on **Next**.
+
+   ![Approved](../media/s16.png)
+
+1. Click on **Done**.
+1. If prompted to stay signed in, you can click **"No"**.
+
+1. Tap on **Finish** in the Mobile Device.
+
+   > NOTE: While logging in again , enter the digits displayed on the screen in the **Authenticator app** and click on Yes.
+
+1. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **"Cancel"** to skip the tour.
+1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
+
+1. If a **Welcome to Microsoft Azure** popup window appears, click **Cancel** to skip the tour.
+1. Use **Next** button from lower right corner to move on to the next page.
 
 ## Support Contact
  
 The CloudLabs support team is available 24/7, 365 days a year, via email and live chat to ensure seamless assistance at any time. We offer dedicated support channels tailored specifically for both learners and instructors, ensuring that all your needs are promptly and efficiently addressed.
 
 Learner Support Contacts:
-- Email Support: labs-support@spektrasystems.com
+- Email Support: cloudlabs-support@spektrasystems.com
 - Live Chat Support: https://cloudlabs.ai/labs-support
 
 Now, click on **Next** from the lower right corner to move on to the next page.
 
-![](./media/i8.jpg)
+![](../media/s7.png)
 
 ### Happy Learning!!

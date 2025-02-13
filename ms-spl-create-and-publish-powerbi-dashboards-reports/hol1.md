@@ -1,12 +1,13 @@
-# Hands-On-Lab: SQL Datawarehouse with Syanpse
-
 # Exercise 1 - Build a Modern Data Warehouse with Azure Synapse Pipelines
+
+### Estimated Duration: 4 Hours
 
 In this exercise, you examine various methods for ingesting data into Azure Synapse Analytics and Azure Data Lake Storage Gen2. You use notebooks and Data Flows to ingest, transform, and load data.
 
-The tasks you will perform in this exercise are:
+## Lab Objectives
 
-- Build Modern Data Warehouse pipelines
+In this lab, you will perform:
+
   - Task 1 - Explore and modify a notebook
     - Bonus Challenge
   - Task 2 - Explore, modify, and run a Pipeline containing a Data Flow
@@ -28,21 +29,55 @@ Please locate this value and note it for the steps below.
 
 In this task, you see how easy it is to write into a SQL Pool table with Spark thanks to the SQL Analytics Connector. Notebooks are used to write the code required to write to SQL Pool tables using Spark.
 
-1. **Note:** If you still have your notebook open from the end of Exercise 1, **skip ahead** to step 3 below. Otherwise, in Synapse Studio, select **Develop** from the left-hand menu.
+1. In the Azure Portal, select **Resource groups**.
 
-   ![Develop is selected and highlighted in the Synapse Analytics menu.](../media/develop-hub.png "Develop hub")
+   ![](../media/s21.png "Azure resource groups")
 
-2. Select **+**, then **Notebook** to add a new notebook.
+3. Select the **Synapse-AIAD** resource group.
+
+   ![Open Synapse Analytics resource group](../media/s22.png "Resources list")
+
+4. Select **SQLPool01** and **resume** it before starting the exercise. Select **Yes** on the pop-up.
+
+   ![SQLPool01 is highlighted.](../media/s23.png "SQLPool01")
+
+   ![Resume sqlpool](../media/s24.png "Resume")
+
+   >**Note :** You can ignore if it is already in running state.
+     
+5. Return to the resource group, then select the **asadataexplorer<inject key="uniqueId" enableCopy="false"/>** and **start** it. 
+
+   > **Note**: Please note starting of data explorer pool might take a few minutes, you don't have to wait for it to be started you can proceed to the next steps.
+
+   ![SQLPool01 is highlighted.](../media/s25.png "SQLPool01")
+   
+   ![SQLPool01 is highlighted.](../media/s26.png "SQLPool01")
+   
+   >**Note**: In case the data explorer is in a stopping state. Please continue with the lab as we need it in exercise 4. You can visit this page after a few minutes and start it.
+
+1. In Azure portal search for **Azure Synapse Analytics (1)** and select **Azure Synapse Analytics (2)** from the list.
+
+   ![](../media/s17.png)
+
+1. Navigate to **asaworkspace<inject key="Deployment ID" enableCopy="false"/>** by selecting it.
+
+   ![](../media/s18.png)
+
+1. On the **Overview (1)** page click on **Open (2)** under getting started for Open Syanpse Studio.  
+
+   ![](../media/s19.png)
+
+1. In Synapse Studio, select **Develop** from the left-hand menu.
+
+   ![](../media/develop-hub.png)
+
+2. Select **+**, then click on **Notebook** to add a new notebook.
 
    ![The new notebook menu item is highlighted.](../media/new-notebook.png "New notebook")
 
-3. If not already attached, attach your Spark Compute **SparkPool02** by selecting it from the **Attach to** drop-down list and attach **PySpark(Python)** by selecting it from **Language** drop down list, then select **+ code** to create a new cell.
+3. If not already attached, attach your Spark Compute **SparkPool01** by selecting it from the **Attach to** drop-down list and attach **PySpark(Python)** by selecting it from **Language** drop down list, then select **+ code** to create a new cell.
 
-   ![The Spark pool is selected in the Attach to drop-down.](../media/ex2tsk2stp3.png "Add code")
-
-   **Note:** If you are using your notebook from the end of Exercise 1, select language **PySpark(Python)** from the drop-down and hover over the area just below the cell in the notebook select **+ Code** to add a new cell.
-
-   ![The add code button is highlighted.](../media/ex2tsk2stp3.1.png "Add code")
+   ![The Spark pool is selected in the Attach to drop-down.](../media/s28.png "Add code")
 
 4. Paste the following into the new cell and **replace** `YOUR_DATALAKE_NAME` with your storage account name **<inject key="Storage Account Name"></inject>**.
 
@@ -56,7 +91,7 @@ In this task, you see how easy it is to write into a SQL Pool table with Spark t
     val adlsPath = "abfss://wwi@YOUR_DATALAKE_NAME.dfs.core.windows.net"
     ```
 
-    Select the **Run cell** button to execute the new cell:
+1. Select the **Run cell** button to execute the new cell:
 
     ![The new cell is displayed.](../media/ex02-notebook-cell1.png "Run cell")
 
@@ -112,15 +147,20 @@ In this task, you see how easy it is to write into a SQL Pool table with Spark t
 
     > This pane allows you to monitor the underlying Spark jobs, and observe the status of each. As you can see, the cell is split into two Spark jobs, and the progress of each can be observed. We will take a more in-depth look at monitoring Spark applications in Task 4 below.
 
-    ![The Spark job status pane is displayed below the cell, with the progress of each Spark job visible.](../media/ex02-notebook-ingest-cell-3-spark-job.png "Spark Job status")
+    ![The Spark job status pane is displayed below the cell, with the progress of each Spark job visible.](../media/s29.png "Spark Job status")
 
-11. Close the notebook by selecting the **X** in the top right of the tab and then select **Close + discard changes**. Closing the notebook will ensure you free up the allocated resources on the Spark Pool.
+    > **Note** : Ensure that the status of SQLpool01 is in **Online** state.
+
+    ![](../media/s27.png)
+
+
+11. Close the notebook by selecting the **X** from top then select **Keep session** on Keep current session? pane and  select **Close + discard changes**. Closing the notebook will ensure you free up the allocated resources on the Spark Pool.
      
     ![The Close + discard changes button is highlighted.](../media/closenotebook.png "closenotebook")
 
+    ![](../media/s31.png)
+
     ![The Close + discard changes button is highlighted.](../media/notebook-close-discard-changes.png "Discard changes?")
-    
-    > **Note**: If you get error while performing this step, you can change the sparkpool to sparkpool02 and try re-running the steps.
 
 12. Now, select **Data** from the left-hand menu.
 
@@ -154,7 +194,7 @@ In this task, you see how easy it is to write into a SQL Pool table with Spark t
       
    - If you receive a success message, you can proceed to the next task.
    - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 <validation step="0ed2a2e6-1b08-4524-a785-7ec3111f94c9" />
 
@@ -211,7 +251,7 @@ Now, take some time to review the **Exercise 2 - Bonus Notebook with CSharp** no
       
    - If you receive a success message, you can proceed to the next task.
    - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 <validation step="d6fd28e4-f8e2-49c2-800e-c32b8ba02f48" />
 
@@ -256,8 +296,6 @@ In this task, you use a Pipeline that implements Code-free AI to do sentiment an
 
    > Below the graph is a series of tabs, each providing additional details about the selected activity. The **General** tab displays the name and description assigned to the activity and a few other properties.
 
-   ![A screenshot of Exercise 2 - Enrich Data pipeline canvas and properties pane is displayed.](https://github.com/solliancenet/azure-synapse-analytics-day/raw/master/../media/ex02-orchestrate-copy-data-general.png "Pipeline canvas")
-
 8. Select the **Source** tab. The source defines the location from which data will be copied by the activity. The **Source dataset** field is a pointer to the location of the source data.
 
    > Take a moment to review the various properties available on the Source tab. Data is being retrieved from files stored in a data lake.
@@ -298,9 +336,7 @@ In this task, you use a Pipeline that implements Code-free AI to do sentiment an
 
     > This sets the UniqueId parameter required by the `EnrichCustomerData` data flow to a unique substring extracted from the pipeline run ID.
 
-    > **NOTE!** If the **Parameters** value is absent, please update the value with **```@substring(pipeline().RunId,0,8)```** by selecting **Pipeline expression** and paste the value under **Add dynamic content** then **finish**.
-    
-    ![Two images showing how to add the parameter value](https://github.com/SpektraSystems/azure-synapse-analytics-day/blob/master/../media/parameter-value-add.png?raw=true "Adding parameter value")
+    > **NOTE :** If the **Parameters** value is absent, please update the value with **```@substring(pipeline().RunId,0,8)```** by selecting **Pipeline expression** and paste the value under **Add dynamic content** then **finish**.
 
 14. Take a minute to look at the options available on the various tabs in the configuration panel. You will notice the properties here define how the data flow operates within the pipeline.
 
@@ -332,7 +368,7 @@ In this task, you use a Pipeline that implements Code-free AI to do sentiment an
 
 19. The **Data preview** tab allows you to ingest a small subset of data and view it on the canvas. This functionality requires an active debug session, so for this workshop, a screenshot that displays the execution results for that tab is provided below.
 
-    > **NOTE! This step cannot be performed in the lab environment.**
+    > **NOTE :** This step cannot be performed in the lab environment.
 
     > The `Zip` column is highlighted on the Data preview tab to show a sample of the values contained within that field. Below, you will filter the list of zip codes down to those that appear in the customer dataset.
 
@@ -356,7 +392,7 @@ In this task, you use a Pipeline that implements Code-free AI to do sentiment an
 
     > In data flows, many transformation properties are entered as expressions. These expressions are composed of column values, parameters, functions, operators, and literals that evaluate to a Spark data type at run time. To learn more, visit the [Build expressions in data flow](https://docs.microsoft.com/azure/data-factory/concepts-data-flow-expression-builder) page in the documentation.
 
-    ![The Visual expression builder is displayed.](../media/E2-T2-S23.png "Dataflow expression builder")
+    ![](../media/s32.png)
 
 24. The filter currently applied ensures all zip codes are between 90000 and 98000. Observe the different expression elements and values in the area below the expression box that help you create and modify filters and other expressions.
 
@@ -412,9 +448,7 @@ In this task, you use a Pipeline that implements Code-free AI to do sentiment an
 
     > This Publish all dialog allows you to review the changes that will be saved.
 
-37. Within a few seconds, you _may_ receive a notification that the publish completed. If so, select **Dismiss** in the notification.
-
-    ![The publishing completed notification is displayed.](../media/ex02-publishing-completed.png "Publishing completed")
+37. Within a few seconds, you _may_ receive a notification that the publish completed.
 
 38. Your pipeline is now ready to run. Select **Add trigger** then **Trigger now** on the toolbar for the pipeline.
 
@@ -438,9 +472,9 @@ After you finish building and debugging your data flow and its associated pipeli
 
    ![Pipeline runs is selected and highlighted under the Orchestration section of the monitor resource list.](../media/ex02-monitor-pipeline-runs1.png "Synapse Analytics Monitor")
 
-3. Select the `Exercise 2 - Enrich Data_A03` pipeline the list. This will have a status of `In progress`.
+3. Select the `Exercise 2 - Enrich Data` pipeline the list. This will have a status of `In progress`.
 
-   ![The first "Exercise 2 - Enrich Data" item in the list of pipeline runs is highlighted.](../media/ex02-monitoring-pipeline-runs.1.png "Pipeline run list")
+   ![The first "Exercise 2 - Enrich Data" item in the list of pipeline runs is highlighted.](../media/s33.png "Pipeline run list")
 
 4. On the pipeline run details screen, you will see a graphical representation of the activities within the pipeline, as well as a list of the individual activity runs. Both provide status indicators for each activity.
 
@@ -496,19 +530,19 @@ After you finish building and debugging your data flow and its associated pipeli
 
     ![The EnrichCustomerData sink component is highlighted in the graph, and the associated details panel is displayed on the right-hand side of the screen.](../media/ex2-t3-step15.png "Data Flow activity details")
 
-16. Close the data flow activity Details dialog by selecting the **X** on the right-hand side of the toolbar.
+16. Now, navigate back to Exercise 2 - Enrich Data - Activity runs.
 
-    ![The X (close) button is highlighted on the data flow Details dialog toolbar.](../media/ex02-monitor-data-flow-close.png "Data flow details")
+    ![](../media/s34.png)
 
 17. Back on Exercise 2 - Enrich Data pipeline run screen, switch to the **Gantt** view. This view provides a graphical representation of the run times of the various activities within the pipeline.
 
-    ![The Gantt view option is selected and highlighted on the pipeline run dialog.](../media/ex02-monitoring-ex2-enrich-data-activity-runs-gantt.1.png "Pipeline run Gantt view")
+    ![The Gantt view option is selected and highlighted on the pipeline run dialog.](../media/s35.png "Pipeline run Gantt view")
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
       
    - If you receive a success message, you can proceed to the next task.
    - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 <validation step="bee8c9be-ae41-447a-abc8-06578a8aa9d9" />
 
@@ -516,7 +550,8 @@ After you finish building and debugging your data flow and its associated pipeli
 
 Remember the sentiment analysis task we had in our Exercise 2 - Enrich Data pipeline? Once your pipeline's execution is complete we have some sentiment data we can look into.
 
-1. Go to the **Data** Hub and navigate to the `dev > bronze > sentiment` **(2)** folder in the primary data lake account **(1)**. Select all the files and right click to select **New SQL script > Select TOP 100 rows**.
+1. Go to the **Data** Hub under linked data expand Azure Data Lake Storage Gen2.
+1. Navigate to `dev > bronze > sentiment` **(2)** folder in the primary data lake account **(1)**. Select all the files and right click to select **New SQL script > Select TOP 100 rows (3)**.
 
    >NOTE: Select all the files except the text file.
 
@@ -564,7 +599,7 @@ In this task, you examine the Apache Spark application monitoring capabilities b
    - The second section is a summary of the Spark application.
    - The third section displays the diagnostics and logs associated with the Spark application.
 
-   ![A screenshot of the Log query screen is displayed.](../media/ex02-monitor-activities-spark-application-dataflow.1.png "Synapse Analytics Monitor")
+     ![A screenshot of the Log query screen is displayed.](../media/ex02-monitor-activities-spark-application-dataflow.1.png "Synapse Analytics Monitor")
 
 6. Select the **Logs** tab to view the log output. You may switch between log sources and types, using the dropdown lists below.
 
@@ -600,3 +635,8 @@ In this task, you examine the Apache Spark application monitoring capabilities b
 
     ![Read is selected and highlighted in the Display drop-down list.](../media/ex02-monitor-activities-spark-applications-display-drop-down-read-graph.1.png "Synapse Analytics Monitor")
 
+## Summary
+
+In this lab, you used **Azure Synapse Analytics** to build a **modern data warehouse** by ingesting, transforming, and monitoring data. You explored **Synapse Notebooks** to process and transform data, modified and executed a **Pipeline with a Data Flow** for ETL operations, and monitored **pipelines and Spark applications** to optimize performance and troubleshoot execution issues.
+
+## You have successfully completed the lab.
